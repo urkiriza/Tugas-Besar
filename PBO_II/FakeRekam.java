@@ -5,6 +5,8 @@ public class FakeRekam {
 		System.out.println("Hallo Gopek");
 		System.out.println("-_-");
 		System.out.println("asasasasasasa");
+		System.out.println("asa");
 	}
+	
 	
 }
