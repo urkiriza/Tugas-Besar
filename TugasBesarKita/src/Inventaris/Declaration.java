@@ -33,6 +33,25 @@ public class Declaration {
 	private int JumlahCCTV;
 	private String KondisiCCTV;
 	private String PosisiCCTV;
+	private String KondisiLantai;
+	private String KondisiDinding;
+	private String KondisiAtap;
+	private String KondisiPintu;
+	private String KondisiJendela;
+	private String SirkulasiUdara;
+	private int NilaiPencahayaan;
+	private int NilaiKelembapan;
+	private int NilaiSuhu;
+	private String Kebisingan;
+	private String KeBauan;
+	private String Kebocoran;
+	private String Kerusakan;
+	private String Keausan;
+	private String Kekokohan;
+	private String KunciPintu;
+	private String KunciJendela;
+	private String TingkatBahaya;
+	
 	
 	private String getNamaRuang() {
 		return NamaRuang;
@@ -334,23 +353,5 @@ public class Declaration {
 	private void setTingkatBahaya(String tingkatBahaya) {
 		TingkatBahaya = tingkatBahaya;
 	}
-	private String KondisiLantai;
-	private String KondisiDinding;
-	private String KondisiAtap;
-	private String KondisiPintu;
-	private String KondisiJendela;
-	private String SirkulasiUdara;
-	private int NilaiPencahayaan;
-	private int NilaiKelembapan;
-	private int NilaiSuhu;
-	private String Kebisingan;
-	private String KeBauan;
-	private String Kebocoran;
-	private String Kerusakan;
-	private String Keausan;
-	private String Kekokohan;
-	private String KunciPintu;
-	private String KunciJendela;
-	private String TingkatBahaya;
-	
+
 }
