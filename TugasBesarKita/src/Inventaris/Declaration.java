@@ -7,10 +7,9 @@ public class Declaration {
 	private String Fakultas;
 	private int PanjangRuang;
 	private int LebarRuang;
-	private int LuasRuang;
+	private double LuasRuang, RasioLuas;
 	private String BentukRuang;
 	private int JumlahKursi;
-	private int RasioLuas;
 	private int JumlahPintu;
 	private int JumlahJendela;
 	private int JumlahStopKontak;
@@ -52,15 +51,27 @@ public class Declaration {
 	private String KunciJendela;
 	private String TingkatBahaya;
 	
+	double hitungLuasRuang (int PanjangRuang, int LebarRuang){
+		LuasRuang = PanjangRuang * LebarRuang;
+		System.out.println("Luas Ruang = " + LuasRuang);
+		return LuasRuang;
+	}
 	
-	private void setNamaRuang(String nama) {
-		NamaRuang = nama;
+	double hitungRasioLuas (double LuasRuang, int JumlahKursi){
+		RasioLuas = LuasRuang / JumlahKursi;
+		System.out.println("Rasio Luas = " + RasioLuas);
+		return RasioLuas;
+	}
+		
+	private void setNamaRuang(String namaruang) {
+		NamaRuang = namaruang;
 	}
 	private String getNamaRuang() {
 		return NamaRuang;
 	}
-	private void setLokasiRuang(String lokasi) {
-		LokasiRuang = lokasi;
+	
+	private void setLokasiRuang(String lokasiruang) {
+		LokasiRuang = lokasiruang;
 	}
 	private String getLokasiRuang() {
 		return LokasiRuang;
@@ -77,68 +88,68 @@ public class Declaration {
 	private String getFakultas() {
 		return Fakultas;
 	}
-	private void setPanjangRuang(int panjang) {
-		PanjangRuang = panjang;
+	private void setPanjangRuang(int panjangruang) {
+		PanjangRuang = panjangruang;
 	}
 	private int getPanjangRuang() {
 		return PanjangRuang;
 	}
-	private void setLebarRuang(int lebar) {
-		LebarRuang = lebar;
+	private void setLebarRuang(int lebarruang) {
+		LebarRuang = lebarruang;
 	}
 	private int getLebarRuang() {
 		return LebarRuang;
 	}
-	private void setLuasRuang(int luas) {
-		LuasRuang = luas;
+	private void setLuasRuang(double luasruang) {
+		LuasRuang = luasruang;
 	}
-	private int getLuasRuang() {
+	private double getLuasRuang() {
 		return LuasRuang;
 	}
-	private void setBentukRuang(String bentuk) {
-		BentukRuang = bentuk;
+	private void setBentukRuang(String bentukruang) {
+		BentukRuang = bentukruang;
 	}
 	private String getBentukRuang() {
 		return BentukRuang;
 	}
-	private void setJumlahKursi(int jumlah) {
-		JumlahKursi = jumlah;
+	private void setJumlahKursi(int jumlahkursi) {
+		JumlahKursi = jumlahkursi;
 	}
 	private int getJumlahKursi() {
 		return JumlahKursi;
 	}
-	private void setRasioLuas(int rasio) {
-		RasioLuas = rasio;
+	private void setRasioLuas(double rasioluas) {
+		RasioLuas = rasioluas;
 	}
-	private int getRasioLuas() {
+	private double getRasioLuas() {
 		return RasioLuas;
 	}
-	private void setJumlahPintu(int pintu) {
-		JumlahPintu = pintu;
+	private void setJumlahPintu(int jumlahpintu) {
+		JumlahPintu = jumlahpintu;
 	}
 	private int getJumlahPintu() {
 		return JumlahPintu;
 	}
-	private void setJumlahJendela(int jendela) {
-		JumlahJendela = jendela;
+	private void setJumlahJendela(int jumlahjendela) {
+		JumlahJendela = jumlahjendela;
 	}
 	private int getJumlahJendela() {
 		return JumlahJendela;
 	}
-	private void setJumlahStopKontak(int stopkontak) {
-		JumlahStopKontak = stopkontak;
+	private void setJumlahStopKontak(int jumlahstopkontak) {
+		JumlahStopKontak = jumlahstopkontak;
 	}
 	private int getJumlahStopKontak() {
 		return JumlahStopKontak;
 	}
-	private void setKondisiStopKontak(String kstopkontak) {
-		KondisiStopKontak = kstopkontak;
+	private void setKondisiStopKontak(String kondisistopkontak) {
+		KondisiStopKontak = kondisistopkontak;
 	}
 	private String getKondisiStopKontak() {
 		return KondisiStopKontak;
 	}
-	private void setPosisiStopKontak(String postopkontak) {
-		PosisiStopKontak = postopkontak;
+	private void setPosisiStopKontak(String posisitopkontak) {
+		PosisiStopKontak = posisitopkontak;
 	}
 	private String getPosisiStopKontak() {
 		return PosisiStopKontak;
@@ -149,68 +160,68 @@ public class Declaration {
 	private int getJumlahKabelProyektor() {
 		return JumlahKabelProyektor;
 	}
-	private void setKondisiKableProyektor(String kkable) {
-		KondisiKableProyektor = kkable;
+	private void setKondisiKableProyektor(String kondisikable) {
+		KondisiKableProyektor = kondisikable;
 	}
 	private String getKondisiKableProyektor() {
 		return KondisiKableProyektor;
 	}
-	private void setPosisiKabelProyektor(String poskabel) {
-		PosisiKabelProyektor = poskabel;
+	private void setPosisiKabelProyektor(String posisikabel) {
+		PosisiKabelProyektor = posisikabel;
 	}
 	private String getPosisiKabelProyektor() {
 		return PosisiKabelProyektor;
 	}
-	private void setJumlahLampu(int lampu) {
-		JumlahLampu = lampu;
+	private void setJumlahLampu(int jumlahlampu) {
+		JumlahLampu = jumlahlampu;
 	}
 	private int getJumlahLampu() {
 		return JumlahLampu;
 	}
-	private void setKondisiLampu(String klampu) {
-		KondisiLampu = klampu;
+	private void setKondisiLampu(String kondisilampu) {
+		KondisiLampu = kondisilampu;
 	}
 	private String getKondisiLampu() {
 		return KondisiLampu;
 	}
-	private void setPosisiLampu(String poslampu) {
-		PosisiLampu = poslampu;
+	private void setPosisiLampu(String posisilampu) {
+		PosisiLampu = posisilampu;
 	}
 	private String getPosisiLampu() {
 		return PosisiLampu;
 	}
-	private void setJumlahKipasAngin(int kipasangin) {
-		JumlahKipasAngin = kipasangin;
+	private void setJumlahKipasAngin(int jumlahkipasangin) {
+		JumlahKipasAngin = jumlahkipasangin;
 	}
 	private int getJumlahKipasAngin() {
 		return JumlahKipasAngin;
 	}
-	private void setKondisiKipasAngin(String kkipasangin) {
-		KondisiKipasAngin = kkipasangin;
+	private void setKondisiKipasAngin(String kondisikipasangin) {
+		KondisiKipasAngin = kondisikipasangin;
 	}
 	private String getKondisiKipasAngin() {
 		return KondisiKipasAngin;
 	}
-	private void setPosisiKipasAngin(String poskipasangin) {
-		PosisiKipasAngin = poskipasangin;
+	private void setPosisiKipasAngin(String posisikipasangin) {
+		PosisiKipasAngin = posisikipasangin;
 	}
 	private String getPosisiKipasAngin() {
 		return PosisiKipasAngin;
 	}
-	private void setJumlahAC(int jAC) {
-		JumlahAC = jAC;
+	private void setJumlahAC(int jumlahAC) {
+		JumlahAC = jumlahAC;
 	}
 	private int getJumlahAC() {
 		return JumlahAC;
 	}
-	private void setKondisiAC(String kAC) {
-		KondisiAC = kAC;
+	private void setKondisiAC(String kondisiAC) {
+		KondisiAC = kondisiAC;
 	}
 	private String getKondisiAC() {
 		return KondisiAC;
 	}
-	private void setPosisiAC(String posAC) {
-		PosisiAC = posAC;
+	private void setPosisiAC(String posisiAC) {
+		PosisiAC = posisiAC;
 	}
 	private String getPosisiAC() {
 		return PosisiAC;
@@ -245,56 +256,56 @@ public class Declaration {
 	private String getPosisiCCTV() {
 		return PosisiCCTV;
 	}
-	private void setKondisiLantai(String klantai) {
-		KondisiLantai = klantai;
+	private void setKondisiLantai(String kondisilantai) {
+		KondisiLantai = kondisilantai;
 	}
 	private String getKondisiLantai() {
 		return KondisiLantai;
 	}
-	private void setKondisiDinding(String kdinding) {
-		KondisiDinding = kdinding;
+	private void setKondisiDinding(String kondisidinding) {
+		KondisiDinding = kondisidinding;
 	}
 	private String getKondisiDinding() {
 		return KondisiDinding;
 	}
-	private void setKondisiAtap(String katap) {
-		KondisiAtap = katap;
+	private void setKondisiAtap(String kondisiatap) {
+		KondisiAtap = kondisiatap;
 	}
 	private String getKondisiAtap() {
 		return KondisiAtap;
 	}
-	private void setKondisiPintu(String kpintu) {
-		KondisiPintu = kpintu;
+	private void setKondisiPintu(String kondisipintu) {
+		KondisiPintu = kondisipintu;
 	}
 	private String getKondisiPintu() {
 		return KondisiPintu;
 	}
-	private void setKondisiJendela(String kjendela) {
-		KondisiJendela = kjendela;
+	private void setKondisiJendela(String kondisijendela) {
+		KondisiJendela = kondisijendela;
 	}
 	private String getKondisiJendela() {
 		return KondisiJendela;
 	}
-	private void setSirkulasiUdara(String sirkudara) {
-		SirkulasiUdara = sirkudara;
+	private void setSirkulasiUdara(String sirkulasiudara) {
+		SirkulasiUdara = sirkulasiudara;
 	}
 	private String getSirkulasiUdara() {
 		return SirkulasiUdara;
 	}
-	private void setNilaiPencahayaan(int npencahayaan) {
-		NilaiPencahayaan = npencahayaan;
+	private void setNilaiPencahayaan(int nilaipencahayaan) {
+		NilaiPencahayaan = nilaipencahayaan;
 	}
 	private int getNilaiPencahayaan() {
 		return NilaiPencahayaan;
 	}
-	private void setNilaiKelembapan(int nkelembapan) {
-		NilaiKelembapan = nkelembapan;
+	private void setNilaiKelembapan(int nilaikelembapan) {
+		NilaiKelembapan = nilaikelembapan;
 	}
 	private int getNilaiKelembapan() {
 		return NilaiKelembapan;
 	}
-	private void setNilaiSuhu(int nsuhu) {
-		NilaiSuhu = nsuhu;
+	private void setNilaiSuhu(int nilaisuhu) {
+		NilaiSuhu = nilaisuhu;
 	}
 	private int getNilaiSuhu() {
 		return NilaiSuhu;
@@ -305,20 +316,20 @@ public class Declaration {
 	private String getKebisingan() {
 		return Kebisingan;
 	}
-	private void setKebauan(String bau) {
-		Kebauan = bau;
+	private void setKebauan(String kebauan) {
+		Kebauan = kebauan;
 	}
 	private String getKebauan() {
 		return Kebauan;
 	}
-	private void setKebocoran(String bocor) {
-		Kebocoran = bocor;
+	private void setKebocoran(String kebocoran) {
+		Kebocoran = kebocoran;
 	}
 	private String getKebocoran() {
 		return Kebocoran;
 	}
-	private void setKerusakan(String rusak) {
-		Kerusakan = rusak;
+	private void setKerusakan(String kerusakan) {
+		Kerusakan = kerusakan;
 	}
 	private String getKerusakan() {
 		return Kerusakan;
