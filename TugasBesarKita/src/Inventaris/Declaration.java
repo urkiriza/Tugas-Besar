@@ -194,6 +194,17 @@ public class Declaration {
 	}
 	public void setPosisiStopKontak(String posisitopkontak) {
 		PosisiStopKontak = posisitopkontak;
+		String posisi = scan.nextLine();
+		if((posisi)==("Dekat Dosen")){
+			System.out.println("Sesuai");
+		}
+		else if ((posisi)!=("Dekat Dosen")){
+			System.out.println("Tidak Sesuai");
+		}
+		else
+		{
+			System.out.println("Input Salah");
+		}
 	}
 	public String getPosisiStopKontak() {
 		return PosisiStopKontak;
@@ -359,6 +370,18 @@ public class Declaration {
 	}
 	public void setBandwith(Double bandwith) {
 		Bandwith = bandwith;
+		String LG = scan.nextLine();
+		if((LG)=="Dapat Login"){
+			System.out.println("Sesuai");
+		}
+		else if ((LG)!="Dapat Login"){
+			System.out.println("Tidak Sesuai");
+		}
+		else
+		{
+			System.out.println("Input Salah");
+		}
+		
 	}
 	public Double getBandwith() {
 		return Bandwith;
