@@ -10,9 +10,6 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
-<<<<<<< HEAD
-/Inventaris/
-=======
 /.classpath
 /.gitignore
 /.project
@@ -20,5 +17,4 @@ hs_err_pid*
 /LICENSE
 /PBO_II/
 /README.md
->>>>>>> refs/remotes/origin/master
 /TugasBesarKita/

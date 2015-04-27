@@ -167,6 +167,12 @@ public class Declaration {
 	}
 	public void setJumlahStopKontak(int jumlahstopkontak) {
 		JumlahStopKontak = jumlahstopkontak;
+		if(JumlahStopKontak >= 4){
+			System.out.println("Sesuai");
+		}
+		else if(JumlahStopKontak <=4){
+			System.out.println("Tidak Sesuai");
+		}
 	}
 	public int getJumlahStopKontak() {
 		return JumlahStopKontak;
