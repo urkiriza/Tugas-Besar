@@ -74,6 +74,7 @@ public class Declaration {
 		
 	public void setNamaRuang(String namaruang) {
 		NamaRuang = namaruang;
+		
 	}
 	public String getNamaRuang() {
 		return NamaRuang;
@@ -81,36 +82,43 @@ public class Declaration {
 	
 	public void setLokasiRuang(String lokasiruang) {
 		LokasiRuang = lokasiruang;
+		
+		//masukkan lokasi ruangan
 	}
 	public String getLokasiRuang() {
 		return LokasiRuang;
 	}
 	public void setProgramStudi(String program) {
 		ProgramStudi = program;
+		//masukkan program studi 
 	}
 	public String getProgramStudi() {
 		return ProgramStudi;
 	}
 	public void setFakultas(String fakultas) {
 		Fakultas = fakultas;
+		//masukkan fakultas
 	}
 	public String getFakultas() {
 		return Fakultas;
 	}
 	public void setPanjangRuang(int panjangruang) {
 		PanjangRuang = panjangruang;
+		//masukkan panjang ruangan
 	}
 	public int getPanjangRuang() {
 		return PanjangRuang;
 	}
 	public void setLebarRuang(int lebarruang) {
 		LebarRuang = lebarruang;
+		//masukkan lebar ruangan
 	}
 	public int getLebarRuang() {
 		return LebarRuang;
 	}
 	public void setLuasRuang(double luasruang) {
 		LuasRuang = luasruang;
+		//masukkan luas ruangan
 	}
 	public double getLuasRuang() {
 		return LuasRuang;
