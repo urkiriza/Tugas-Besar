@@ -202,6 +202,7 @@ public class Declaration {
 	}
 	public void setPosisiStopKontak(String posisitopkontak) {
 		PosisiStopKontak = posisitopkontak;
+
 		String posisi = scan.nextLine();
 		if((posisi)==("Dekat Dosen")){
 			System.out.println("Sesuai");
@@ -213,16 +214,24 @@ public class Declaration {
 		{
 			System.out.println("Input Salah");
 		}
+
+		String PI = scan.nextLine();
+		if (("Pojok Ruangan".equals(PI)) && ("Dekat Dosen".equals(PI)))
+			System.out.println("Kondisi Sesuai");
+		else if("Belakang".equals(PI))
+			System.out.println("Kondisi Tidak sesuai");
+		else
+			System.out.println("Input Salah");
 	}
 	public String getPosisiStopKontak() {
 		return PosisiStopKontak;
 	}
 	public void setJumlahKabelProyektor(int jumlahkabel) {
 		JumlahKabelProyektor = jumlahkabel;
-		if(JumlahStopKontak >= 1){
+		if(JumlahKabelProyektor >= 1){
 			System.out.println("Sesuai");
 		}
-		else if(JumlahStopKontak <=1){
+		else if(JumlahKabelProyektor <=1){
 			System.out.println("Tidak Sesuai");
 		}
 	}
@@ -244,16 +253,23 @@ public class Declaration {
 	}
 	public void setPosisiKabelProyektor(String posisikabel) {
 		PosisiKabelProyektor = posisikabel;
+		String PL = scan.nextLine();
+		if ("Dekat Dosen".equals(PL))
+			System.out.println("Kondisi Sesuai");
+		else if("Belakang".equals(PL))
+			System.out.println("Kondisi Tidak sesuai");
+		else
+			System.out.println("Input Salah");
 	}
 	public String getPosisiKabelProyektor() {
 		return PosisiKabelProyektor;
 	}
 	public void setJumlahLampu(int jumlahlampu) {
 		JumlahLampu = jumlahlampu;
-		if(JumlahStopKontak >= 18){
+		if(JumlahLampu >= 18){
 			System.out.println("Sesuai");
 		}
-		else if(JumlahStopKontak <=18){
+		else if(JumlahLampu <=18){
 			System.out.println("Tidak Sesuai");
 		}
 		
@@ -289,10 +305,10 @@ public class Declaration {
 	}
 	public void setJumlahKipasAngin(int jumlahkipasangin) {
 		JumlahKipasAngin = jumlahkipasangin;
-		if(JumlahStopKontak >= 2){
+		if(JumlahKipasAngin >= 2){
 			System.out.println("Sesuai");
 		}
-		else if(JumlahStopKontak <=2){
+		else if(JumlahKipasAngin <=2){
 			System.out.println("Tidak Sesuai");
 		}
 	}
@@ -327,10 +343,10 @@ public class Declaration {
 	}
 	public void setJumlahAC(int jumlahAC) {
 		JumlahAC = jumlahAC;
-		if(JumlahStopKontak >= 1){
+		if(JumlahAC >= 1){
 			System.out.println("Sesuai");
 		}
-		else if(JumlahStopKontak <=1){
+		else if(JumlahAC <=1){
 			System.out.println("Tidak Sesuai");
 		}
 	}
@@ -396,10 +412,10 @@ public class Declaration {
 	}
 	public void setJumlahCCTV(int jumlahCCTV) {
 		JumlahCCTV = jumlahCCTV;
-		if(JumlahStopKontak == 2){
+		if(JumlahCCTV == 2){
 			System.out.println("Sesuai");
 		}
-		else if(JumlahStopKontak <=2){
+		else if(JumlahCCTV <=2){
 			System.out.println("Tidak Sesuai");
 		}
 	}
