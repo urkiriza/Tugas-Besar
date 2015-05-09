@@ -1,685 +1,355 @@
 package Inventaris;
-import java.util.Scanner;
+
 public class Declaration {
-	private String NamaRuang;
-	private String LokasiRuang;
-	private String ProgramStudi;
-	private String Fakultas;
-	private int PanjangRuang;
-	private int LebarRuang;
-	private double LuasRuang, RasioLuas;
-	private String BentukRuang;
-	private int JumlahKursi;
-	private int JumlahPintu;
-	private int JumlahJendela;
-	private int JumlahStopKontak;
-	private String KondisiStopKontak;
-	private String PosisiStopKontak;
-	private int JumlahKabelProyektor;
-	private String KondisiKableProyektor;
-	private String PosisiKabelProyektor;
-	private int JumlahLampu;
-	private String KondisiLampu;
-	private String PosisiLampu;
-	private int JumlahKipasAngin;
-	private String KondisiKipasAngin;
-	private String PosisiKipasAngin;
-	private int JumlahAC;
-	private String KondisiAC;
-	private String PosisiAC;
-	private String SSID;
-	private Double Bandwith;
-	private int JumlahCCTV;
-	private String KondisiCCTV;
-	private String PosisiCCTV;
-	private String KondisiLantai;
-	private String KondisiDinding;
-	private String KondisiAtap;
-	private String KondisiPintu;
-	private String KondisiJendela;
-	private String SirkulasiUdara;
-	private int NilaiPencahayaan;
-	private int NilaiKelembapan;
-	private int NilaiSuhu;
-	private String Kebisingan;
-	private String Kebauan;
-	private String Kebocoran;
-	private String Kerusakan;
-	private String Keausan;
-	private String Kekokohan;
-	private String KunciPintu;
-	private String KunciJendela;
-	private String TingkatBahaya;
+	protected String NamaRuang;
+	protected String LokasiRuang;
+	protected String ProgramStudi;
+	protected String Fakultas;
+	protected int PanjangRuang;
+	protected int LebarRuang;
+	protected double LuasRuang;
+	protected double RasioLuas;
+	protected String BentukRuang;
+	protected int JumlahKursi;
+	protected int JumlahPintu;
+	protected int JumlahJendela;
+	protected int JumlahStopKontak;
+	protected String KondisiStopKontak;
+	protected String PosisiStopKontak;
+	protected int JumlahKabelProyektor;
+	protected String KondisiKableProyektor;
+	protected String PosisiKabelProyektor;
+	protected int JumlahLampu;
+	protected String KondisiLampu;
+	protected String PosisiLampu;
+	protected int JumlahKipasAngin;
+	protected String KondisiKipasAngin;
+	protected String PosisiKipasAngin;
+	protected int JumlahAC;
+	protected String KondisiAC;
+	protected String PosisiAC;
+	protected String SSID;
+	protected Double Bandwith;
+	protected int JumlahCCTV;
+	protected String KondisiCCTV;
+	protected String PosisiCCTV;
+	protected String KondisiLantai;
+	protected String KondisiDinding;
+	protected String KondisiAtap;
+	protected String KondisiPintu;
+	protected String KondisiJendela;
+	protected String SirkulasiUdara;
+	protected int NilaiPencahayaan;
+	protected int NilaiKelembapan;
+	protected int NilaiSuhu;
+	protected String Kebisingan;
+	protected String Kebauan;
+	protected String Kebocoran;
+	protected String Kerusakan;
+	protected String Keausan;
+	protected String Kekokohan;
+	protected String KunciPintu;
+	protected String KunciJendela;
+	protected String TingkatBahaya;
 	
-	Scanner scan = new Scanner (System.in);
-	
-	double hitungLuasRuang (int PanjangRuang, int LebarRuang){
-		LuasRuang = PanjangRuang * LebarRuang;
-		System.out.println("Luas Ruang = " + LuasRuang);
-		return LuasRuang;
-		}
-	
-	
-	double hitungRasioLuas (double LuasRuang, int JumlahKursi){
-		RasioLuas = LuasRuang / JumlahKursi;
-		if (RasioLuas >= 0.5){
-			System.out.println("Sesuai");
-		}
-		else if(RasioLuas <= 0.5){
-			System.out.println("Input Salah");
-		}
-		System.out.println("Rasio Luas = " + RasioLuas);
-		return RasioLuas;
-	}
-		
-	public void setNamaRuang(String namaruang) {
-		NamaRuang = namaruang;
-		
-	}
-	public String getNamaRuang() {
-		return NamaRuang;
-	}
-	
-	public void setLokasiRuang(String lokasiruang) {
-		LokasiRuang = lokasiruang;
-		
-		//masukkan lokasi ruangan
-	}
 	public String getLokasiRuang() {
 		return LokasiRuang;
 	}
-	public void setProgramStudi(String program) {
-		ProgramStudi = program;
-		//masukkan program studi 
+	public void setLokasiRuang(String lokasiRuang) {
+		LokasiRuang = lokasiRuang;
 	}
 	public String getProgramStudi() {
 		return ProgramStudi;
 	}
-	public void setFakultas(String fakultas) {
-		Fakultas = fakultas;
-		//masukkan fakultas
+	public void setProgramStudi(String programStudi) {
+		ProgramStudi = programStudi;
 	}
 	public String getFakultas() {
 		return Fakultas;
 	}
-	public void setPanjangRuang(int panjangruang) {
-		PanjangRuang = panjangruang;
-		//masukkan panjang ruangan
+	public void setFakultas(String fakultas) {
+		Fakultas = fakultas;
 	}
 	public int getPanjangRuang() {
 		return PanjangRuang;
 	}
-	public void setLebarRuang(int lebarruang) {
-		LebarRuang = lebarruang;
-		//masukkan lebar ruangan
+	public void setPanjangRuang(int panjangRuang) {
+		PanjangRuang = panjangRuang;
 	}
 	public int getLebarRuang() {
 		return LebarRuang;
 	}
-	public void setLuasRuang(double luasruang) {
-		LuasRuang = luasruang;
-		//masukkan luas ruangan
+	public void setLebarRuang(int lebarRuang) {
+		LebarRuang = lebarRuang;
 	}
 	public double getLuasRuang() {
 		return LuasRuang;
 	}
-	public void setBentukRuang(String bentukruang) {
-		BentukRuang = bentukruang;
-		String PJ = "Persegi Panjang";
-		if ((PanjangRuang) != (LuasRuang)){
-			System.out.println(PJ);}
-		else if((PanjangRuang)==(LuasRuang)){
-			System.out.println("Tidak persegi panjang");
-			System.out.println("Tidak Sesuai");
-			}
-		else {
-			System.out.println("Bentuk Ruangan Absurd");
-			}
-		}
-	public String getBentukRuang() {
-		return BentukRuang;
-	}
-	public void setJumlahKursi(int jumlahkursi) {
-		JumlahKursi = jumlahkursi;
-	}
-	public int getJumlahKursi() {
-		return JumlahKursi;
-	}
-	public void setRasioLuas(double rasioluas) {
-		RasioLuas = rasioluas;
+	public void setLuasRuang(double luasRuang) {
+		LuasRuang = luasRuang;
 	}
 	public double getRasioLuas() {
 		return RasioLuas;
 	}
-	public void setJumlahPintu(int jumlahpintu) {
-		JumlahPintu = jumlahpintu;
-		if (JumlahPintu >= 2){
-			System.out.println("Sesuai");
-		}
-		else if (JumlahPintu <= 1){
-			System.out.println("Tidak Sesuai");
-		}
+	public void setRasioLuas(double rasioLuas) {
+		RasioLuas = rasioLuas;
+	}
+	public String getBentukRuang() {
+		return BentukRuang;
+	}
+	public void setBentukRuang(String bentukRuang) {
+		BentukRuang = bentukRuang;
+	}
+	public int getJumlahKursi() {
+		return JumlahKursi;
+	}
+	public void setJumlahKursi(int jumlahKursi) {
+		JumlahKursi = jumlahKursi;
 	}
 	public int getJumlahPintu() {
 		return JumlahPintu;
-			}
-	public void setJumlahJendela(int jumlahjendela) {
-		JumlahJendela = jumlahjendela;
-		if (JumlahJendela >= 1){
-			System.out.println("Sesuai");
-		}
-		else if(JumlahJendela <= 1){
-			System.out.println("Tidak Sesuai");
-		}
+	}
+	public void setJumlahPintu(int jumlahPintu) {
+		JumlahPintu = jumlahPintu;
 	}
 	public int getJumlahJendela() {
 		return JumlahJendela;
 	}
-	public void setJumlahStopKontak(int jumlahstopkontak) {
-		JumlahStopKontak = jumlahstopkontak;
-		if(JumlahStopKontak >= 4){
-			System.out.println("Sesuai");
-		}
-		else if(JumlahStopKontak <=4){
-			System.out.println("Tidak Sesuai");
-		}
+	public void setJumlahJendela(int jumlahJendela) {
+		JumlahJendela = jumlahJendela;
 	}
 	public int getJumlahStopKontak() {
 		return JumlahStopKontak;
 	}
-	public void setKondisiStopKontak(String kondisistopkontak) {
-		KondisiStopKontak = kondisistopkontak;
-		String KK = scan.nextLine();
-		if ("Baik".equals(KK))
-			System.out.println("Kondisi Sesuai");
-		else if("Buruk".equals(KK))
-			System.out.println("Kondisi Tidak sesuai");
-		else
-			System.out.println("Input Salah");
+	public void setJumlahStopKontak(int jumlahStopKontak) {
+		JumlahStopKontak = jumlahStopKontak;
 	}
 	public String getKondisiStopKontak() {
 		return KondisiStopKontak;
 	}
-	public void setPosisiStopKontak(String posisitopkontak) {
-		PosisiStopKontak = posisitopkontak;
-
-		String posisi = scan.nextLine();
-		if((posisi)==("Dekat Dosen")){
-			System.out.println("Sesuai");
-		}
-		else if ((posisi)!=("Dekat Dosen")){
-			System.out.println("Tidak Sesuai");
-		}
-		else
-		{
-			System.out.println("Input Salah");
-		}
-
-		String PI = scan.nextLine();
-		if (("Pojok Ruangan".equals(PI)) && ("Dekat Dosen".equals(PI)))
-			System.out.println("Kondisi Sesuai");
-		else if("Belakang".equals(PI))
-			System.out.println("Kondisi Tidak sesuai");
-		else
-			System.out.println("Input Salah");
+	public void setKondisiStopKontak(String kondisiStopKontak) {
+		KondisiStopKontak = kondisiStopKontak;
 	}
 	public String getPosisiStopKontak() {
 		return PosisiStopKontak;
 	}
-	public void setJumlahKabelProyektor(int jumlahkabel) {
-		JumlahKabelProyektor = jumlahkabel;
-		if(JumlahKabelProyektor >= 1){
-			System.out.println("Sesuai");
-		}
-		else if(JumlahKabelProyektor <=1){
-			System.out.println("Tidak Sesuai");
-		}
+	public void setPosisiStopKontak(String posisiStopKontak) {
+		PosisiStopKontak = posisiStopKontak;
 	}
 	public int getJumlahKabelProyektor() {
 		return JumlahKabelProyektor;
 	}
-	public void setKondisiKableProyektor(String kondisikable) {
-		KondisiKableProyektor = kondisikable;
-		String KE = scan.nextLine();
-		if ("Berfungsi".equals(KE))
-			System.out.println("Kondisi Sesuai");
-		else if("Tidak Berfungsi".equals(KE))
-			System.out.println("Kondisi Tidak sesuai");
-		else
-			System.out.println("Input Salah");
+	public void setJumlahKabelProyektor(int jumlahKabelProyektor) {
+		JumlahKabelProyektor = jumlahKabelProyektor;
 	}
 	public String getKondisiKableProyektor() {
 		return KondisiKableProyektor;
 	}
-	public void setPosisiKabelProyektor(String posisikabel) {
-		PosisiKabelProyektor = posisikabel;
-		String PL = scan.nextLine();
-		if ("Dekat Dosen".equals(PL))
-			System.out.println("Kondisi Sesuai");
-		else if("Belakang".equals(PL))
-			System.out.println("Kondisi Tidak sesuai");
-		else
-			System.out.println("Input Salah");
+	public void setKondisiKableProyektor(String kondisiKableProyektor) {
+		KondisiKableProyektor = kondisiKableProyektor;
 	}
 	public String getPosisiKabelProyektor() {
 		return PosisiKabelProyektor;
 	}
-	public void setJumlahLampu(int jumlahlampu) {
-		JumlahLampu = jumlahlampu;
-		if(JumlahLampu >= 18){
-			System.out.println("Sesuai");
-		}
-		else if(JumlahLampu <=18){
-			System.out.println("Tidak Sesuai");
-		}
-		
+	public void setPosisiKabelProyektor(String posisiKabelProyektor) {
+		PosisiKabelProyektor = posisiKabelProyektor;
 	}
 	public int getJumlahLampu() {
 		return JumlahLampu;
 	}
-	public void setKondisiLampu(String kondisilampu) {
-		KondisiLampu = kondisilampu;
-		String KP = scan.nextLine();
-		if ("Baik".equals(KP))
-			System.out.println("Kondisi Sesuai");
-		else if("Rusak".equals(KP))
-			System.out.println("Kondisi Tidak sesuai");
-		else
-			System.out.println("Input Salah");
+	public void setJumlahLampu(int jumlahLampu) {
+		JumlahLampu = jumlahLampu;
 	}
 	public String getKondisiLampu() {
 		return KondisiLampu;
 	}
-	public void setPosisiLampu(String posisilampu) {
-		PosisiLampu = posisilampu;
-		String PS = scan.nextLine();
-		if ("Atap Ruangan".equals(PS))
-			System.out.println("Kondisi Sesuai");
-		else if("Bawah Ruangan".equals(PS))
-			System.out.println("Kondisi Tidak sesuai");
-		else
-			System.out.println("Input Salah");
+	public void setKondisiLampu(String kondisiLampu) {
+		KondisiLampu = kondisiLampu;
 	}
 	public String getPosisiLampu() {
 		return PosisiLampu;
 	}
-	public void setJumlahKipasAngin(int jumlahkipasangin) {
-		JumlahKipasAngin = jumlahkipasangin;
-		if(JumlahKipasAngin >= 2){
-			System.out.println("Sesuai");
-		}
-		else if(JumlahKipasAngin <=2){
-			System.out.println("Tidak Sesuai");
-		}
+	public void setPosisiLampu(String posisiLampu) {
+		PosisiLampu = posisiLampu;
 	}
 	public int getJumlahKipasAngin() {
 		return JumlahKipasAngin;
 	}
-	public void setKondisiKipasAngin(String kondisikipasangin) {
-		KondisiKipasAngin = kondisikipasangin;
-		String KI = scan.nextLine();
-		if ("Baik".equals(KI))
-			System.out.println("Kondisi Sesuai");
-		else if("Rusak".equals(KI))
-			System.out.println("Kondisi Tidak sesuai");
-		else
-			System.out.println("Input Salah");
+	public void setJumlahKipasAngin(int jumlahKipasAngin) {
+		JumlahKipasAngin = jumlahKipasAngin;
 	}
 	public String getKondisiKipasAngin() {
 		return KondisiKipasAngin;
 	}
-	public void setPosisiKipasAngin(String posisikipasangin) {
-		PosisiKipasAngin = posisikipasangin;
-		String PI = scan.nextLine();
-		if ("Atap Ruangan".equals(PI))
-			System.out.println("Kondisi Sesuai");
-		else if("Bawah Ruangan".equals(PI))
-			System.out.println("Kondisi Tidak sesuai");
-		else
-			System.out.println("Input Salah");
+	public void setKondisiKipasAngin(String kondisiKipasAngin) {
+		KondisiKipasAngin = kondisiKipasAngin;
 	}
 	public String getPosisiKipasAngin() {
 		return PosisiKipasAngin;
 	}
-	public void setJumlahAC(int jumlahAC) {
-		JumlahAC = jumlahAC;
-		if(JumlahAC >= 1){
-			System.out.println("Sesuai");
-		}
-		else if(JumlahAC <=1){
-			System.out.println("Tidak Sesuai");
-		}
+	public void setPosisiKipasAngin(String posisiKipasAngin) {
+		PosisiKipasAngin = posisiKipasAngin;
 	}
 	public int getJumlahAC() {
 		return JumlahAC;
 	}
-	public void setKondisiAC(String kondisiAC) {
-		KondisiAC = kondisiAC;
-		String KC = scan.nextLine();
-		if ("Baik".equals(KC))
-			System.out.println("Kondisi Sesuai");
-		else if("Buruk".equals(KC))
-			System.out.println("Kondisi Tidak sesuai");
-		else
-			System.out.println("Input Salah");
+	public void setJumlahAC(int jumlahAC) {
+		JumlahAC = jumlahAC;
 	}
 	public String getKondisiAC() {
 		return KondisiAC;
 	}
-	public void setPosisiAC(String posisiAC) {
-		PosisiAC = posisiAC;
-		String PI = scan.nextLine();
-		if ("Belakang".equals(PI))
-			System.out.println("Kondisi Sesuai");
-		else if("Samping".equals(PI))
-			System.out.println("Kondisi Tidak sesuai");
-		else
-			System.out.println("Input Salah");
+	public void setKondisiAC(String kondisiAC) {
+		KondisiAC = kondisiAC;
 	}
 	public String getPosisiAC() {
 		return PosisiAC;
 	}
-	public void setSSID(String sSID) {
-		SSID = sSID;
-		String SD = scan.nextLine();
-		if ("UMM".equals(SD))
-			System.out.println("Kondisi Sesuai");
-		else if("Lainnya".equals(SD))
-			System.out.println("Kondisi Tidak sesuai");
-		else
-			System.out.println("Input Salah");
+	public void setPosisiAC(String posisiAC) {
+		PosisiAC = posisiAC;
 	}
 	public String getSSID() {
 		return SSID;
 	}
-	public void setBandwith(Double bandwith) {
-		Bandwith = bandwith;
-		String LG = scan.nextLine();
-		if((LG)=="Dapat Login"){
-			System.out.println("Sesuai");
-		}
-		else if ((LG)!="Dapat Login"){
-			System.out.println("Tidak Sesuai");
-		}
-		else
-		{
-			System.out.println("Input Salah");
-		}
-		
+	public void setSSID(String sSID) {
+		SSID = sSID;
 	}
 	public Double getBandwith() {
 		return Bandwith;
 	}
-	public void setJumlahCCTV(int jumlahCCTV) {
-		JumlahCCTV = jumlahCCTV;
-		if(JumlahCCTV == 2){
-			System.out.println("Sesuai");
-		}
-		else if(JumlahCCTV <=2){
-			System.out.println("Tidak Sesuai");
-		}
+	public void setBandwith(Double bandwith) {
+		Bandwith = bandwith;
 	}
 	public int getJumlahCCTV() {
 		return JumlahCCTV;
 	}
-	public void setKondisiCCTV(String kondisiCCTV) {
-		KondisiCCTV = kondisiCCTV;
-		String CT = scan.nextLine();
-		if ("Baik".equals(CT))
-			System.out.println("Kondisi Sesuai");
-		else if("Buruk".equals(CT))
-			System.out.println("Kondisi Tidak sesuai");
-		else
-			System.out.println("Input Salah");
+	public void setJumlahCCTV(int jumlahCCTV) {
+		JumlahCCTV = jumlahCCTV;
 	}
 	public String getKondisiCCTV() {
 		return KondisiCCTV;
 	}
-	public void setPosisiCCTV(String posisiCCTV) {
-		PosisiCCTV = posisiCCTV;
-		String PC = scan.nextLine();
-		if ("Depan".equals(PC))
-			System.out.println("Kondisi Sesuai");
-		else if("Belakang".equals(PC))
-			System.out.println("Kondisi Tidak sesuai");
-		else
-			System.out.println("Input Salah");
+	public void setKondisiCCTV(String kondisiCCTV) {
+		KondisiCCTV = kondisiCCTV;
 	}
 	public String getPosisiCCTV() {
 		return PosisiCCTV;
 	}
-	public void setKondisiLantai(String kondisilantai) {
-		KondisiLantai = kondisilantai;
-		String KL = scan.nextLine();
-		if("Bersih".equals(KL))
-			System.out.println("Sesuai");
-		else if("Kotor".equals(KL))
-			System.out.println("Tidak Sesuai");
-		else 
-			System.out.println("Input Salah");
+	public void setPosisiCCTV(String posisiCCTV) {
+		PosisiCCTV = posisiCCTV;
 	}
 	public String getKondisiLantai() {
 		return KondisiLantai;
 	}
-	public void setKondisiDinding(String kondisidinding) {
-		KondisiDinding = kondisidinding;
-		String KD = scan.nextLine();
-		if("Bersih".equals(KD))
-			System.out.println("Sesuai");
-		else if("Kotor".equals(KD))
-			System.out.println("Tidak Sesuai");
-		else 
-			System.out.println("Input Salah");
+	public void setKondisiLantai(String kondisiLantai) {
+		KondisiLantai = kondisiLantai;
 	}
 	public String getKondisiDinding() {
 		return KondisiDinding;
 	}
-	public void setKondisiAtap(String kondisiatap) {
-		KondisiAtap = kondisiatap;
-		String KA = scan.nextLine();
-		if("Bersih".equals(KA))
-			System.out.println("Sesuai");
-		else if("Kotor".equals(KA))
-			System.out.println("Tidak Sesuai");
-		else 
-			System.out.println("Input Salah");
+	public void setKondisiDinding(String kondisiDinding) {
+		KondisiDinding = kondisiDinding;
 	}
 	public String getKondisiAtap() {
 		return KondisiAtap;
 	}
-	public void setKondisiPintu(String kondisipintu) {
-		KondisiPintu = kondisipintu;
-		String KP = scan.nextLine();
-		if("Bersih".equals(KP))
-			System.out.println("Sesuai");
-		else if("Kotor".equals(KP))
-			System.out.println("Tidak Sesuai");
-		else 
-			System.out.println("Input Salah");
+	public void setKondisiAtap(String kondisiAtap) {
+		KondisiAtap = kondisiAtap;
 	}
 	public String getKondisiPintu() {
 		return KondisiPintu;
 	}
-	public void setKondisiJendela(String kondisijendela) {
-		KondisiJendela = kondisijendela;
-		String KJ = scan.nextLine();
-		if("Bersih".equals(KJ))
-			System.out.println("Sesuai");
-		else if("Kotor".equals(KJ))
-			System.out.println("Tidak Sesuai");
-		else 
-			System.out.println("Input Salah");
+	public void setKondisiPintu(String kondisiPintu) {
+		KondisiPintu = kondisiPintu;
 	}
 	public String getKondisiJendela() {
 		return KondisiJendela;
 	}
-	public void setSirkulasiUdara(String sirkulasiudara) {
-		SirkulasiUdara = sirkulasiudara;
-		String SU = scan.nextLine();
-		if ("Terbuka".equals(SU))
-			System.out.println("Sesuai");
-		else if ("Tertutup".equals(SU))
-			System.out.println("Tidak Sesuai");
-		else
-			System.out.println("Input Salah");
+	public void setKondisiJendela(String kondisiJendela) {
+		KondisiJendela = kondisiJendela;
 	}
 	public String getSirkulasiUdara() {
 		return SirkulasiUdara;
 	}
-	public void setNilaiPencahayaan(int nilaipencahayaan) {
-		NilaiPencahayaan = nilaipencahayaan;
-		int NP = scan.nextInt();
-		if ((NP >= 250) && (NP<=350))
-			System.out.println("Cahaya Sesuai");
-		else if ((NP >= 1) && (NP <= 249))
-			System.out.println("Cahaya Tidak Sesuai");
-		else
-			System.out.println("Input Salah");
+	public void setSirkulasiUdara(String sirkulasiUdara) {
+		SirkulasiUdara = sirkulasiUdara;
 	}
 	public int getNilaiPencahayaan() {
 		return NilaiPencahayaan;
 	}
-	public void setNilaiKelembapan(int nilaikelembapan) {
-		NilaiKelembapan = nilaikelembapan;
-		int K = scan.nextInt();
-		if ((K >= 70) && (K <= 80))
-			System.out.println("Lembab Sesuai");
-		else if ((K >= 1) && (K <= 69))
-			System.out.println("Lembab Tidak Sesuai");
-		else
-			System.out.println("Input Salah");
+	public void setNilaiPencahayaan(int nilaiPencahayaan) {
+		NilaiPencahayaan = nilaiPencahayaan;
 	}
 	public int getNilaiKelembapan() {
 		return NilaiKelembapan;
 	}
-	public void setNilaiSuhu(int nilaisuhu) {
-		NilaiSuhu = nilaisuhu;
-		int S = scan.nextInt();
-		if ((S >= 25) && (S <= 	35))
-			System.out.println("Suhu Sesuai");
-		else if ((S >= 1) && (S <= 24))
-			System.out.println("Suhu Tidak Sesuai");
-		else
-			System.out.println("Input Salah");
+	public void setNilaiKelembapan(int nilaiKelembapan) {
+		NilaiKelembapan = nilaiKelembapan;
 	}
 	public int getNilaiSuhu() {
 		return NilaiSuhu;
 	}
-	public void setKebisingan(String kebisingan) {
-		Kebisingan = kebisingan;
-		String K = scan.nextLine();
-		if ("Tidak Bising".equals(K))
-			System.out.println("Kondisi Sesuai");
-		else if ("Bising".equals(K))
-			System.out.println("Kondisi Tidak Sesuai");
-		else
-			System.out.println("Input Salah");
+	public void setNilaiSuhu(int nilaiSuhu) {
+		NilaiSuhu = nilaiSuhu;
 	}
 	public String getKebisingan() {
 		return Kebisingan;
 	}
-	public void setKebauan(String kebauan) {
-		Kebauan = kebauan;
-		String B = scan.nextLine();
-		if ("Tidak Bau".equals(B))
-			System.out.println("Kondisi Sesuai");
-		else if ("Bau".equals(B))
-			System.out.println("Kondisi Tidak Sesuai");
-		else
-			System.out.println("Input Salah");
+	public void setKebisingan(String kebisingan) {
+		Kebisingan = kebisingan;
 	}
 	public String getKebauan() {
 		return Kebauan;
 	}
-	public void setKebocoran(String kebocoran) {
-		Kebocoran = kebocoran;
-		String C = scan.nextLine();
-		if ("Tidak Ada".equals(C))
-			System.out.println("Kondisi Sesuai");
-		else if ("Ada".equals(C))
-			System.out.println("Kondisi Tidak Sesuai");
-		else
-			System.out.println("Input Salah");
+	public void setKebauan(String kebauan) {
+		Kebauan = kebauan;
 	}
 	public String getKebocoran() {
 		return Kebocoran;
 	}
-	public void setKerusakan(String kerusakan) {
-		Kerusakan = kerusakan;
-		String R = scan.nextLine();
-		if ("Tidak Ada".equals(R))
-			System.out.println("Kondisi Sesuai");
-		else if ("Ada".equals(R))
-			System.out.println("Kondisi Tidak Sesuai");
-		else 
-			System.out.println("Input Salah");
+	public void setKebocoran(String kebocoran) {
+		Kebocoran = kebocoran;
 	}
 	public String getKerusakan() {
 		return Kerusakan;
 	}
-	public void setKeausan(String keausan) {
-		Keausan = keausan;
-		String A = scan.nextLine();
-		if ("Tidak Ada".equals(A))
-			System.out.println("Kondisi Sesuai");
-		else if("ada".equals(A))
-			System.out.println("Kondisi Tidak sesuai");
-		else
-			System.out.println("Input Salah");
+	public void setKerusakan(String kerusakan) {
+		Kerusakan = kerusakan;
 	}
 	public String getKeausan() {
 		return Keausan;
 	}
-	public void setKekokohan(String kekokohan) {
-		Kekokohan = kekokohan;
-		String KK = scan.nextLine();
-		if ("Kokoh".equals(KK))
-			System.out.println("Kondisi Sesuai");
-		else if("ada".equals(KK))
-			System.out.println("Kondisi Tidak sesuai");
-		else
-			System.out.println("Input Salah");
+	public void setKeausan(String keausan) {
+		Keausan = keausan;
 	}
 	public String getKekokohan() {
 		return Kekokohan;
 	}
-	public void setKunciPintu(String kuncipintu) {
-		KunciPintu = kuncipintu;
-		String KP = scan.nextLine();
-		if ("Ada".equals(KP))
-			System.out.println("Kondisi Sesuai");
-		else if("Tidak Ada".equals(KP))
-			System.out.println("Kondisi Tidak sesuai");
-		else
-			System.out.println("Input Salah");
+	public void setKekokohan(String kekokohan) {
+		Kekokohan = kekokohan;
 	}
 	public String getKunciPintu() {
 		return KunciPintu;
 	}
-	public void setKunciJendela(String kuncijendela) {
-		KunciJendela = kuncijendela;
-		String KJ = scan.nextLine();
-		if ("Ada".equals(KJ))
-			System.out.println("Kondisi Sesuai");
-		else if("Tidak Ada".equals(KJ))
-			System.out.println("Kondisi Tidak sesuai");
-		else
-			System.out.println("Input Salah");
+	public void setKunciPintu(String kunciPintu) {
+		KunciPintu = kunciPintu;
 	}
 	public String getKunciJendela() {
 		return KunciJendela;
 	}
-	public void setTingkatBahaya(String tingkatbahaya) {
-		TingkatBahaya = tingkatbahaya;
-		String TB = scan.nextLine();
-		if ("Aman".equals(TB))
-			System.out.println("Kondisi Sesuai");
-		else if("Tidak Aman".equals(TB))
-			System.out.println("Kondisi Tidak sesuai");
-		else
-			System.out.println("Input Salah");
+	public void setKunciJendela(String kunciJendela) {
+		KunciJendela = kunciJendela;
 	}
 	public String getTingkatBahaya() {
 		return TingkatBahaya;
 	}
-}
+	public void setTingkatBahaya(String tingkatBahaya) {
+		TingkatBahaya = tingkatBahaya;
+	}
+	public String getNamaRuang() {
+		return NamaRuang;
+	}
+	public void setNamaRuang(String namaRuang) {
+		NamaRuang = namaRuang;
+		}
+	}
