@@ -351,5 +351,6 @@ public class Declaration {
 	}
 	public void setNamaRuang(String namaRuang) {
 		NamaRuang = namaRuang;
+			
 		}
 	}
