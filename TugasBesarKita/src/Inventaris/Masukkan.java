@@ -15,6 +15,14 @@ public class Masukkan {
 		String ProDi = in.nextLine();
 		DD.setProgramStudi(ProDi);
 		System.out.println("Masukkan Fakultas : ");
+		String Fak = in.nextLine();
+		DD.setFakultas(Fak);
+		System.out.println("Masukkan Panjang Ruangan : ");
+		int PR = in.nextInt();
+		DD.setPanjangRuang(PR);
+		System.out.println("Masukkan Lebar Ruangan : ");
+		int LR = in.nextInt();
+		DD.setLebarRuang(LR);
 		
 		
 
