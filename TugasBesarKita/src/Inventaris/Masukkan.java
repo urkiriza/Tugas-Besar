@@ -1,15 +1,18 @@
 package Inventaris;
 import java.util.Scanner;
-public class Masukkan extends Declaration{
+public class Masukkan {
 	Scanner in = new Scanner(System.in);
 	
 	public Masukkan(){
+		Declaration DD = new Declaration();
 		System.out.print("Masukkan Nama Ruangan : ");
 		String Nama = in.nextLine();
-		this.NamaRuang = Nama;
+		DD.setNamaRuang(Nama);
 		System.out.println("Masukkan Lokasi Ruangan : ");
 		String Lokasi = in.nextLine();
-		this.LokasiRuang = Lokasi;
+		DD.setLokasiRuang(Lokasi);
+		
+
 	}
 	
 }
