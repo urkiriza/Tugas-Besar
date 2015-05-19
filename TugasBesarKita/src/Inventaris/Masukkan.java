@@ -12,6 +12,11 @@ public class Masukkan {
 		String Lokasi = in.nextLine();
 		DD.setLokasiRuang(Lokasi);
 		System.out.println("Masukkan Program Studi : ");
+		String ProDi = in.nextLine();
+		DD.setProgramStudi(ProDi);
+		System.out.println("Masukkan Fakultas : ");
+		
+		
 
 	}
 	
