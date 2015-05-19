@@ -10,6 +10,12 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+/.classpath
+/.gitignore
+/.project
 /Inventaris/
-/TugasBesarKita/
+/LICENSE
+/README.md
+/Thumbs.db
 /Tugas besar Revisi Ke-2.docx
+/TugasBesarKita/

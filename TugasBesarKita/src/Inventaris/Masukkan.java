@@ -11,7 +11,7 @@ public class Masukkan {
 		System.out.println("Masukkan Lokasi Ruangan : ");
 		String Lokasi = in.nextLine();
 		DD.setLokasiRuang(Lokasi);
-		
+		System.out.println("Masukkan Program Studi : ");
 
 	}
 	
