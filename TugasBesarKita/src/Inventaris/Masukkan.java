@@ -23,6 +23,19 @@ public class Masukkan {
 		System.out.println("Masukkan Lebar Ruangan : ");
 		int LR = in.nextInt();
 		DD.setLebarRuang(LR);
+		System.out.println("Masukkan Jumlah Kursi : ");
+		int JK = in.nextInt();
+		DD.setJumlahKursi(JK);
+		System.out.println("Masukkan Jumlah pintu : ");
+		int JP = in.nextInt();
+		DD.setJumlahPintu(JP);
+		System.out.println("Masukkan Jumlah Jendela : ");
+		int JJ = in.nextInt();
+		DD.setJumlahJendela(JJ);
+		System.out.println("Masukkan Jumlah Stop Kontak : ");
+		int JSK = in.nextInt();
+		DD.setJumlahStopKontak(JSK);
+		
 		
 		
 
