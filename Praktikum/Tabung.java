@@ -1,8 +1,8 @@
 
 public class Tabung {
-	private int Jari;
-	private int Tinggi;
-	private double LuasPermukaan, Volume;
+	protected int Jari;
+	protected int Tinggi;
+	protected double LuasPermukaan, Volume;
 	
 	public Tabung (){
 		this.Jari = Jari;

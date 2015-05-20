@@ -1,8 +1,12 @@
 import java.util.Scanner;
 public class HitungTabung {
+	private static Scanner input;
+	private static Scanner input2;
+	private static Scanner input3;
 	public static void main(final String [] args){
-		Scanner Input = new Scanner(System.in);
-		int Pilihan = 9;
+		input2 = new Scanner(System.in);
+		int Pilihan;
+
 
 		do {
 			System.out.println("Aplikasi Penghitung Volume dan Luas Permukaan");
@@ -10,7 +14,7 @@ public class HitungTabung {
 			System.out.println("2. Menghitung Luas Permukaan");
 			System.out.println("0. Keluar");
 			System.out.println("Masukkan Pilihannya : ");
-			Pilihan = Input.nextInt();
+			Pilihan = input2.nextInt();
 			
 			switch(Pilihan){
 			case 1 : Volume(); break;
@@ -19,22 +23,25 @@ public class HitungTabung {
 		}
 		while(Pilihan !=0);
 	}
+	
 
 	private static void Volume() {
 		Tabung T = new Tabung ();
-		Scanner Input = new Scanner(System.in);
+		input = new Scanner(System.in);
 		System.out.println("Masukkan Jari-Jari : " + T.getJari());
-		int Jari = Input.nextInt();
+		input.nextInt();
 		System.out.println("Masukkan Tinggi : " + T.getTinggi());
-		int Tinggi = Input.nextInt();
+		input.nextInt();
+		System.out.println(T.getVolume());
 	}
 	private static void LuasPermukaan() {
 		Tabung T = new Tabung ();
-		Scanner Input = new Scanner(System.in);
+		input3 = new Scanner(System.in);
 		System.out.println("Masukkan Jari-Jari : " + T.getJari());
-		int Jari = Input.nextInt();
+		int Jari = input3.nextInt();
 		System.out.println("Masukkan Tinggi : " + T.getTinggi());
-		int Tinggi = Input.nextInt();
+		input3.nextInt();
+		System.out.println(T.getLuasPermukaan());
 		
 	}
 }
