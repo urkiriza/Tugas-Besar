@@ -35,10 +35,34 @@ public class Masukkan {
 		System.out.println("Masukkan Jumlah Stop Kontak : ");
 		int JSK = in.nextInt();
 		DD.setJumlahStopKontak(JSK);
+		System.out.println("Masukkan Kondisi Stop kontak : ");
+		String KSK = in.nextLine();
+		DD.setKondisiStopKontak(KSK);
+		System.out.println("Masukkan Posisi Stop Kontak : ");
+		String PSK = in.nextLine();//nggak ada kamsut apa2 kok singkatan doang
+		DD.setPosisiStopKontak(PSK);
+		System.out.println("Masukkan Jumlah Kabel Proyektor : ");
+		int JKP = in.nextInt();
+		DD.setJumlahKabelProyektor(JKP);
+		System.out.println("Masukkan Kondisi Kabel Proyektor : ");
+		String KKP = in.nextLine();
+		DD.setKondisiKableProyektor(KKP);
+		System.out.println("Masukkan Posisi Kabel Proyektor : ");
+		String PKP = in.nextLine();
+		DD.setPosisiKabelProyektor(PKP);
+		System.out.println("Masukkan Jumlah Lampu : ");
+		int JL = in.nextInt();
+		DD.setJumlahLampu(JL);
+		System.out.println("Masukkan Kondisi Lampu : ");
+		String KL = in.nextLine();
+		DD.setKondisiLampu(KL);
+		System.out.println("Masukkan Posisi Lampu : ");
+		String PL = in.nextLine();
+		DD.setPosisiLampu(PL);
+		System.out.println("Masukkan Jumlah Kipas Angin : ");
+		int JKA = in.nextInt();
+		DD.setJumlahKipasAngin(JKA);
 		
-		
-		
-
 	}
 	
 }
