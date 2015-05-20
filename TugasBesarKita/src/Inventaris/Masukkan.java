@@ -62,6 +62,36 @@ public class Masukkan {
 		System.out.println("Masukkan Jumlah Kipas Angin : ");
 		int JKA = in.nextInt();
 		DD.setJumlahKipasAngin(JKA);
+		System.out.println("Masukkan Kondisi Kiipas Angin : "); 
+		String KKA = in.nextLine();
+		DD.setKondisiKipasAngin(KKA);
+		System.out.println("Masukkan Posisi Kipas Angin : ");
+		String PKA = in.nextLine();
+		DD.setPosisiKipasAngin(PKA);
+		System.out.println("Masukkan Jumlah AC : ");
+		int JAC = in.nextInt();
+		DD.setJumlahAC(JAC);
+		System.out.println("Masukkan Kondisi AC : ");
+		String KAC = in.nextLine();
+		DD.setKondisiAC(KAC);
+		System.out.println("Masukkan Posisi AC : ");
+		String PAC = in.nextLine();
+		DD.setPosisiAC(PAC);
+		System.out.println("Masukkan SSID : ");
+		String SSID = in.nextLine();
+		DD.setSSID(SSID);
+		System.out.println("Masukkan Banwidth : ");
+		double BAN = in.nextDouble();
+		DD.setBandwith(BAN);
+		System.out.println("Masukkan Jumlah CCTV : ");
+		int JCCTV = in.nextInt();
+		DD.setJumlahCCTV(JCCTV);
+		System.out.println("Masukkan Kondisi CCTV : ");
+		String KCCTV = in.nextLine();
+		DD.setKondisiCCTV(KCCTV);
+		System.out.println("Masukkan Posisi CCTV : ");
+		String PCCTV = in.nextLine();
+		DD.setPosisiCCTV(PCCTV);
 		
 	}
 	
