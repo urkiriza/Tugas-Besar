@@ -6,10 +6,12 @@ public class KondisiRuangKelas extends Declaration {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public void LuasRuang(){
+	public double LuasRuang(){
 			LuasRuang = PanjangRuang * LebarRuang;
+		return LuasRuang();
 	}
-	public void BentukRuang(){
+	
+	public String BentukRuang(){
 		BentukRuang = getBentukRuang();
 		String PJ = "Persegi Panjang";
 		if ((PanjangRuang) != (LuasRuang)){
@@ -21,8 +23,10 @@ public class KondisiRuangKelas extends Declaration {
 		else {
 			System.out.println("Bentuk Ruangan Absurd");
 			}
+		return PJ;
 	}
-	public void RasioLuas(){
+	
+	public double RasioLuas(){
 		RasioLuas = LuasRuang / JumlahKursi;
 		if (RasioLuas >= 0.5){
 			System.out.println("Sesuai");
@@ -30,8 +34,10 @@ public class KondisiRuangKelas extends Declaration {
 		else if(RasioLuas <= 0.5){
 			System.out.println("Input Salah");
 		}
+		return RasioLuas();
 	}
-	public void JumlahPintudanJendela(){
+	
+	public int JumlahPintudanJendela(){
 		JumlahPintu = getJumlahPintu();
 		if (JumlahPintu >= 2){
 			System.out.println("Sesuai");
@@ -46,5 +52,6 @@ public class KondisiRuangKelas extends Declaration {
 		else if(JumlahJendela <= 1){
 			System.out.println("Tidak Sesuai");
 		}
+		return JumlahPintudanJendela();
 	}
 }
