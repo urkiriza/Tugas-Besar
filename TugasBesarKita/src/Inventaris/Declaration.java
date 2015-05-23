@@ -1,6 +1,14 @@
 package Inventaris;
 
 public class Declaration {
+	//buat encapsulasi belum selesai
+	//jangan void
+	//inheritance
+	//abstract
+	//class super
+	//induk
+	//interface
+	//minggu ini deadline
 	protected String NamaRuang;
 	protected String LokasiRuang;
 	protected String ProgramStudi;

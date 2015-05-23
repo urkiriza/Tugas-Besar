@@ -2,6 +2,10 @@ package Inventaris;
 
 public class Keamanan extends Declaration {
 	
+	public Keamanan() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 	public void Kekokohan(){
 		Kekokohan = getKekokohan();
 		String KK = "Kokoh";

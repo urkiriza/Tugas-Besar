@@ -1,7 +1,12 @@
 package Inventaris;
 
 public class IdentitasRuangKelas extends Declaration {
-	public void NamaRuang(){
+	void NamaRuang(){
 		System.out.println(getNamaRuang());
+	}
+
+	public IdentitasRuangKelas() {
+		super();
+		// TODO Auto-generated constructor stub
 	}
 }

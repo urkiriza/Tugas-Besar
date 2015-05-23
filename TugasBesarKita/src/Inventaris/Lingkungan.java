@@ -2,6 +2,11 @@ package Inventaris;
 
 public class Lingkungan extends Declaration {
 	
+	public Lingkungan() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	public void Kebersihan(){
 		KondisiLantai = getKondisiLantai();
 		String KL = "Bersih";

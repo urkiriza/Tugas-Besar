@@ -2,6 +2,10 @@ package Inventaris;
 
 public class Kebersihan extends Declaration {
 	
+	public Kebersihan() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 	public void SirkulasiUdara(){
 		SirkulasiUdara = getSirkulasiUdara();
 		String SU = "Terbuka";

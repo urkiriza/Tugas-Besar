@@ -2,6 +2,10 @@ package Inventaris;
 
 public class KondisiRuangKelas extends Declaration {
 	
+	public KondisiRuangKelas() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 	public void LuasRuang(){
 			LuasRuang = PanjangRuang * LebarRuang;
 	}
