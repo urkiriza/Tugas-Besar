@@ -7,7 +7,7 @@ public class Lingkungan extends Declaration {
 		// TODO Auto-generated constructor stub
 	}
 
-	public void Kebersihan(){
+	public String KondisiLantai(){
 		KondisiLantai = getKondisiLantai();
 		String KL = "Bersih";
 		if("Bersih".equals(KL))
@@ -16,7 +16,10 @@ public class Lingkungan extends Declaration {
 			System.out.println("Tidak Sesuai");
 		else 
 			System.out.println("Input Salah");
-		
+		return KL;
+	}
+	
+	public String KondisiDinding(){
 		KondisiDinding = getKondisiDinding();
 		String KD = "Bersih";
 		if("Bersih".equals(KD))
@@ -25,7 +28,10 @@ public class Lingkungan extends Declaration {
 			System.out.println("Tidak Sesuai");
 		else 
 			System.out.println("Input Salah");
-		
+		return KD;
+	}
+	
+	public String KondisiAtap(){
 		KondisiAtap = getKondisiAtap();
 		String KA = "Bersih";
 		if("Bersih".equals(KA))
@@ -34,7 +40,10 @@ public class Lingkungan extends Declaration {
 			System.out.println("Tidak Sesuai");
 		else 
 			System.out.println("Input Salah");
-		
+		return KA;
+	}
+	
+	public String KondisiPintu(){
 		KondisiPintu = getKondisiPintu();
 		String KP = "Bersih";
 		if("Bersih".equals(KP))
@@ -43,7 +52,10 @@ public class Lingkungan extends Declaration {
 			System.out.println("Tidak Sesuai");
 		else 
 			System.out.println("Input Salah");
-		
+		return KP;
+	}
+	
+	public String KondisiJendela(){
 		KondisiJendela = getKondisiJendela();
 		String KJ = "Bersih";
 		if("Bersih".equals(KJ))
@@ -52,5 +64,6 @@ public class Lingkungan extends Declaration {
 			System.out.println("Tidak Sesuai");
 		else 
 			System.out.println("Input Salah");
-	}
+		return KJ;
+	}	
 }
