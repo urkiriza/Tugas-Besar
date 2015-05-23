@@ -1,47 +1,17 @@
 
 public class Tabung {
-	protected int Jari;
-	protected int Tinggi;
-	protected double LuasPermukaan, Volume;
+	private int r;
+	private int t;
+	private double phi = 3.14;
 	
-	public Tabung (){
-		this.Jari = Jari;
-		this.Tinggi = Tinggi;
-		this.LuasPermukaan = LuasPermukaan;
-		this.Volume = Volume;
+	public Tabung (int r, int t){
+		this.r = r;
+		this.t = t;
 	}
-
-	int getJari(){
-		return Jari;
+	public double Volume(){
+		return phi*r*r*t;
 	}
-	
-	int getTinggi(){
-		return Tinggi;
-	}
-	
-	double getLuasPermukaan(){
-		return LuasPermukaan;
-	}
-	
-	double getVolume(){
-		return Volume;
-	}
-	
-	void setJari(int Jari){
-		this.Jari = Jari;
-	}
-	
-	void setTinggi(int Tinggi){
-		this.Tinggi = Tinggi;
-	}
-	
-	void setLuasPermukaan(double LuasPermukaan){
-		LuasPermukaan = 2* 3.14f * Jari * (Jari + Tinggi);
-		this.LuasPermukaan = LuasPermukaan;
-	}
-	
-	void setVolume(double Volume){
-		Volume = 3.14f * (Jari * Jari) * Tinggi;
-		this.Volume = Volume;
+	public double LuasPermukaan(){
+		return 2*phi*r*(r+t);
 	}
 }
