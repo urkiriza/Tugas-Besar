@@ -1,8 +1,9 @@
 package Inventaris;
 
 public class IdentitasRuangKelas extends Declaration {
-	void NamaRuang(){
+	public String NamaRuang(){
 		System.out.println(getNamaRuang());
+		return NamaRuang();
 	}
 
 	public IdentitasRuangKelas() {
