@@ -6,7 +6,7 @@ public class Keamanan extends Declaration {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public void Kekokohan(){
+	public String Kekokohan(){
 		Kekokohan = getKekokohan();
 		String KK = "Kokoh";
 		if ("Kokoh".equals(KK))
@@ -15,8 +15,9 @@ public class Keamanan extends Declaration {
 			System.out.println("Kondisi Tidak sesuai");
 		else
 			System.out.println("Input Salah");
+		return Kekokohan();
 	}
-	public void KunciPintudanJendela(){
+	public String KunciPintudanJendela(){
 		KunciPintu = getKunciPintu();
 		String KP = "Ada";
 		if ("Ada".equals(KP))
@@ -34,8 +35,9 @@ public class Keamanan extends Declaration {
 			System.out.println("Kondisi Tidak sesuai");
 		else
 			System.out.println("Input Salah");
+		return KunciPintudanJendela();
 	}
-	public void Security(){
+	public String Security(){
 		TingkatBahaya = getTingkatBahaya();
 		String TB = "Aman";
 		if ("Aman".equals(TB))
@@ -44,5 +46,6 @@ public class Keamanan extends Declaration {
 			System.out.println("Kondisi Tidak sesuai");
 		else
 			System.out.println("Input Salah");
+		return Security();
 	}
 }
