@@ -92,6 +92,63 @@ public class Masukkan {
 		System.out.println("Masukkan Posisi CCTV : ");
 		String PCCTV = in.nextLine();
 		DD.setPosisiCCTV(PCCTV);
+		System.out.println("Masukkan kondisi lantai : ");
+		String KLL = in.nextLine();
+		DD.setKondisiLantai(KLL);
+		System.out.println("Masukkan Kondisi Dinding : ");
+		String KDD = in.nextLine();
+		DD.setKondisiDinding(KDD);
+		System.out.println("Masukkan Kondisi Atap : ");
+		String KAA = in.nextLine();
+		DD.setKondisiAtap(KAA);
+		System.out.println("Masukkan kondisi pintu : ");
+		String KPP = in.nextLine();
+		DD.setKondisiPintu(KPP);
+		System.out.println("Masukkan kondisi jendela : ");
+		String KJJ = in.nextLine();
+		DD.setKondisiJendela(KJJ);
+		System.out.println("Masukkan Sirkulasi udara : ");
+		String SSU = in.nextLine();
+		DD.setSirkulasiUdara(SSU);
+		System.out.println("Masukkan Nilai Pencahayaan : ");
+		int NP = in.nextInt();
+		DD.setNilaiPencahayaan(NP);
+		System.out.println("Masukkan Nilai Kelambapan : ");
+		int NK = in.nextInt();
+		DD.setNilaiKelembapan(NK);
+		System.out.println("Masukkan Nilai Suhu : ");
+		int NS = in.nextInt();
+		DD.setNilaiSuhu(NS);
+		System.out.println("Masukkan Kebisingan : ");
+		String KBS = in.nextLine();
+		DD.setKebisingan(KBS);
+		System.out.println("Masukkan Kebauan : ");
+		String KBU = in.nextLine();
+		DD.setKebauan(KBU);
+		System.out.println("Masukkan Kebocoran : ");
+		String KBC = in.nextLine();
+		DD.setKebocoran(KBC);
+		System.out.println("Masukkan Kerusakan : ");
+		String KRS = in.nextLine();
+		DD.setKerusakan(KRS);
+		System.out.println("Masukkan Keausan : ");
+		String KAU = in.nextLine();
+		DD.setKeausan(KAU);
+		System.out.println("Masukkan Kekokohan : ");
+		String KKH = in.nextLine();
+		DD.setKekokohan(KKH);
+		System.out.println("Masukkan Kunci Pintu :");
+		String KPI = in.nextLine();
+		DD.setKunciPintu(KPI);
+		System.out.println("Masukkan Kunci Jendela : ");
+		String KJA = in.nextLine();
+		DD.setKunciJendela(KJA);
+		System.out.println("Masukkan tingkat bahaya : ");
+		String TBH = in.nextLine();
+		DD.setTingkatBahaya(TBH);
+		
+				
+		
 		
 	}
 	
