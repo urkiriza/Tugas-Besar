@@ -8,7 +8,7 @@ public class Lingkungan extends Declaration {
 	}
 
 	public String KondisiLantai(){
-		KondisiLantai = getKondisiLantai();
+		setKondisiLantai(getKondisiLantai());
 		String KL = "Bersih";
 		if("Bersih".equals(KL))
 			System.out.println("Sesuai");
@@ -20,7 +20,7 @@ public class Lingkungan extends Declaration {
 	}
 	
 	public String KondisiDinding(){
-		KondisiDinding = getKondisiDinding();
+		setKondisiDinding(getKondisiDinding());
 		String KD = "Bersih";
 		if("Bersih".equals(KD))
 			System.out.println("Sesuai");
@@ -32,7 +32,7 @@ public class Lingkungan extends Declaration {
 	}
 	
 	public String KondisiAtap(){
-		KondisiAtap = getKondisiAtap();
+		setKondisiAtap(getKondisiAtap());
 		String KA = "Bersih";
 		if("Bersih".equals(KA))
 			System.out.println("Sesuai");
@@ -44,7 +44,7 @@ public class Lingkungan extends Declaration {
 	}
 	
 	public String KondisiPintu(){
-		KondisiPintu = getKondisiPintu();
+		setKondisiPintu(getKondisiPintu());
 		String KP = "Bersih";
 		if("Bersih".equals(KP))
 			System.out.println("Sesuai");
@@ -56,7 +56,7 @@ public class Lingkungan extends Declaration {
 	}
 	
 	public String KondisiJendela(){
-		KondisiJendela = getKondisiJendela();
+		setKondisiJendela(getKondisiJendela());
 		String KJ = "Bersih";
 		if("Bersih".equals(KJ))
 			System.out.println("Sesuai");

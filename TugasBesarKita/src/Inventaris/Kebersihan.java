@@ -7,7 +7,7 @@ public class Kebersihan extends Declaration {
 		// TODO Auto-generated constructor stub
 	}
 	public String SirkulasiUdara(){
-		SirkulasiUdara = getSirkulasiUdara();
+		setSirkulasiUdara(getSirkulasiUdara());
 		String SU = "Terbuka";
 		if ("Terbuka".equals(SU))
 			System.out.println("Sesuai");
@@ -18,7 +18,7 @@ public class Kebersihan extends Declaration {
 		return SirkulasiUdara();
 	}
 	public int Pencahayaan(){
-		NilaiPencahayaan = getNilaiPencahayaan();
+		setNilaiPencahayaan(getNilaiPencahayaan());
 		int NP = 250;
 		if ((NP >= 250) && (NP<=350))
 			System.out.println("Cahaya Sesuai");
@@ -29,7 +29,7 @@ public class Kebersihan extends Declaration {
 		return Pencahayaan();
 	}
 	public int Kelembapan(){
-		NilaiKelembapan = getNilaiKelembapan();
+		setNilaiKelembapan(getNilaiKelembapan());
 		int K = 70;
 		if ((K >= 70) && (K <= 80))
 			System.out.println("Lembab Sesuai");
@@ -40,7 +40,7 @@ public class Kebersihan extends Declaration {
 		return Kelembapan();
 	}
 	public int Suhu(){
-		NilaiSuhu = getNilaiSuhu();
+		setNilaiSuhu(getNilaiSuhu());
 		int S = 25;
 		if ((S >= 25) && (S <= 	35))
 			System.out.println("Suhu Sesuai");

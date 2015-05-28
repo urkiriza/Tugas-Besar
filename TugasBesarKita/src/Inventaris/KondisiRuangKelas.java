@@ -7,16 +7,16 @@ public class KondisiRuangKelas extends Declaration {
 		// TODO Auto-generated constructor stub
 	}
 	public double LuasRuang(){
-			LuasRuang = PanjangRuang * LebarRuang;
+			setLuasRuang(getPanjangRuang() * getLebarRuang());
 		return LuasRuang();
 	}
 	
 	public String BentukRuang(){
-		BentukRuang = getBentukRuang();
+		setBentukRuang(getBentukRuang());
 		String PJ = "Persegi Panjang";
-		if ((PanjangRuang) != (LuasRuang)){
+		if ((getPanjangRuang()) != (getLuasRuang())){
 			System.out.println(PJ);}
-		else if((PanjangRuang)==(LuasRuang)){
+		else if((getPanjangRuang())==(getLuasRuang())){
 			System.out.println("Tidak persegi panjang");
 			System.out.println("Tidak Sesuai");
 			}
@@ -27,29 +27,29 @@ public class KondisiRuangKelas extends Declaration {
 	}
 	
 	public double RasioLuas(){
-		RasioLuas = LuasRuang / JumlahKursi;
-		if (RasioLuas >= 0.5){
+		setRasioLuas(getLuasRuang() / getJumlahKursi());
+		if (getRasioLuas() >= 0.5){
 			System.out.println("Sesuai");
 		}
-		else if(RasioLuas <= 0.5){
+		else if(getRasioLuas() <= 0.5){
 			System.out.println("Input Salah");
 		}
 		return RasioLuas();
 	}
 	
 	public int JumlahPintudanJendela(){
-		JumlahPintu = getJumlahPintu();
-		if (JumlahPintu >= 2){
+		setJumlahPintu(getJumlahPintu());
+		if (getJumlahPintu() >= 2){
 			System.out.println("Sesuai");
 		}
-		else if (JumlahPintu <= 1){
+		else if (getJumlahPintu() <= 1){
 			System.out.println("Tidak Sesuai");
 		}
-		JumlahJendela = getJumlahJendela();
-		if (JumlahJendela >= 1){
+		setJumlahJendela(getJumlahJendela());
+		if (getJumlahJendela() >= 1){
 			System.out.println("Sesuai");
 		}
-		else if(JumlahJendela <= 1){
+		else if(getJumlahJendela() <= 1){
 			System.out.println("Tidak Sesuai");
 		}
 		return JumlahPintudanJendela();
