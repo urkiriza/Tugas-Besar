@@ -4,7 +4,7 @@ public class Masukkan {
 	Scanner in = new Scanner(System.in);
 	
 	public Masukkan(){
-		Declaration DD = new Declaration();
+		Pengguna DD = new Pengguna();
 		System.out.print("Masukkan Nama Ruangan : ");
 		String Nama = in.nextLine();
 		DD.setNamaRuang(Nama);
