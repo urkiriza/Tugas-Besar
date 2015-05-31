@@ -1,14 +1,15 @@
 package Inventaris;
 
-abstract public class IdentitasRuang extends Sistem{
+abstract public class IdentitasRuang extends Sistem implements Masukkan{
 	
 	public IdentitasRuang() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 	
 	@Override
 	String Ruangan() {
+		System.out.println("Nama Ruang : "+getNamaRuang());
+		
 		return null;
 	}
 }
