@@ -1,6 +1,6 @@
 package Inventaris;
 
-public abstract class KebersihanRuang extends Sistem{
+abstract public class KebersihanRuang extends Sistem{
 
 	@Override
 	public String AnalisisSirUdara() {

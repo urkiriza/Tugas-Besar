@@ -1,6 +1,6 @@
 package Inventaris;
 
-public abstract class KondisiRuang extends Sistem{
+abstract public class KondisiRuang extends Sistem{
 
 	@Override
 	public int HitungLuasRuang() {

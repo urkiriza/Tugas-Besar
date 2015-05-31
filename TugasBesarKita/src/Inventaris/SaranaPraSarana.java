@@ -1,6 +1,6 @@
 package Inventaris;
 
-public abstract class SaranaPraSarana extends Sistem{
+abstract public class SaranaPraSarana extends Sistem{
 
 	@Override
 	public String AnalisisListrik() {

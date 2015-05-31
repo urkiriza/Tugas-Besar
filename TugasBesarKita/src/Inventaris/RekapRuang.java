@@ -1,6 +1,6 @@
 package Inventaris;
 
-public abstract class RekapRuang extends Sistem{
+abstract public class RekapRuang extends Sistem{
 
 	@Override
 	public String Review() {

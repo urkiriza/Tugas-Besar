@@ -1,6 +1,6 @@
 package Inventaris;
 
-public abstract class IdentitasRuang extends Sistem{
+abstract public class IdentitasRuang extends Sistem{
 	
 	@Override
 	public String RuanganRuangan() {
