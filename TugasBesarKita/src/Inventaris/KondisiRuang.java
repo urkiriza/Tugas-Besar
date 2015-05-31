@@ -2,29 +2,30 @@ package Inventaris;
 
 abstract public class KondisiRuang extends Sistem{
 
+	public KondisiRuang(){
+		super();
+	}
 	@Override
-	public int HitungLuasRuang() {
+	int HitungLuasRuang() {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public int bentukRuang() {
+	int bentukRuang() {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public Double HitungRasioRuangan() {
+	Double HitungRasioRuangan() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public String AnalisisPdanJ() {
+	String AnalisisPdanJ() {
 		// TODO Auto-generated method stub
 		return null;
-	}
-	
+	}	
 }
-	

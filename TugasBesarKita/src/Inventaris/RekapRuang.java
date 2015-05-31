@@ -2,11 +2,13 @@ package Inventaris;
 
 abstract public class RekapRuang extends Sistem{
 
+	public RekapRuang(){
+		super();
+	}
+	
 	@Override
-	public String Review() {
+	String Review() {
 		// TODO Auto-generated method stub
 		return null;
 	}
-	
 }
-	
