@@ -2,9 +2,9 @@ package Inventaris;
 
 abstract public class Sistem extends Pengguna {
 	abstract String Ruangan();
-	abstract int HitungLuasRuang();
-	abstract int bentukRuang();
-	abstract Double HitungRasioRuangan();
+	abstract double HitungLuasRuang();
+	abstract double BentukRuang();
+	abstract double HitungRasioRuangan();
 	abstract String AnalisisPdanJ();
 	abstract String AnalisisListrik();
 	abstract String AnalisisProyektor();
@@ -24,7 +24,18 @@ abstract public class Sistem extends Pengguna {
 	abstract String AnalisisKerusakan();
 	abstract String AnalisisKeausan();
 	abstract String AnalisisKekokohan();
-	abstract String AnalisisKunci();
+	abstract String AnalisisKunciPintu();
+	abstract String AnalisisKunciJendela();
 	abstract String AnalisisKeamananRuang();
 	abstract String Review();
+	
+	double HitungLuasRuang(int HitungLuasRuang) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+	double HitungRasioRuangan(double HitungRasioLuas) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 }
