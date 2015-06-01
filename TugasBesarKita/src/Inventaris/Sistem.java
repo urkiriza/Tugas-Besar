@@ -13,7 +13,11 @@ abstract public class Sistem extends Pengguna {
 	abstract String AnalisisAC();
 	abstract String AnalisisInternet();
 	abstract String AnalisisCCTV();
-	abstract String AnalisisKebersihan();
+	abstract String AnalisisKondisiLantai();
+	abstract String AnalisisKondisiDinding();
+	abstract String AnalisisKondisiAtap();
+	abstract String AnalisisKondisiPintu();
+	abstract String AnalisisKondisiJendela();
 	abstract String AnalisisSirUdara();
 	abstract String AnalisisPencahayaan();
 	abstract String AnalisisKelmabapan();
