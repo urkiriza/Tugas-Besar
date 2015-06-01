@@ -331,4 +331,14 @@ public class Pengguna {
 	public void setTingkatBahaya(String tingkatBahaya) {
 		TingkatBahaya = tingkatBahaya;
 	}
+	
+	String AnalisisKunciPintu() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	String AnalisisKunciJendela() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
