@@ -8,6 +8,8 @@ abstract public class KondisiRuang extends Sistem implements Masukkan{
 	
 	@Override
 	double HitungLuasRuang(int HitungLuasRuang) {
+		System.out.println("Panjang Ruangan : "+getPanjangRuang());
+		System.out.println("Lebar Ruangan : "+getLebarRuang());
 		System.out.println("Luas Ruangan = " + HitungLuasRuang());
 		HitungLuasRuang = getPanjangRuang() * getLebarRuang();
 		return 0;
@@ -33,6 +35,7 @@ abstract public class KondisiRuang extends Sistem implements Masukkan{
 
 	@Override
 	double HitungRasioRuangan(double HitungRasioLuas) {
+		System.out.println("Jumlah Kursi : "+getJumlahKursi());
 		System.out.println("Rasio Luas Ruangan = " + HitungRasioRuangan());
 		HitungRasioLuas = HitungLuasRuang() / getJumlahKursi();
 		if (HitungRasioLuas >= 0.5){
@@ -46,6 +49,8 @@ abstract public class KondisiRuang extends Sistem implements Masukkan{
 
 	@Override
 	String AnalisisPdanJ() {
+		System.out.println("Jumlah Pintu : "+getJumlahPintu());
+		System.out.println("Jumlah Jendela : "+getJumlahJendela());
 		System.out.println("Analisis Pintu dan Jendela = " + AnalisisPdanJ());
 		if ((getJumlahPintu() >= 2) && ((getJumlahJendela() >= 1))){
 			System.out.println("Sesuai");

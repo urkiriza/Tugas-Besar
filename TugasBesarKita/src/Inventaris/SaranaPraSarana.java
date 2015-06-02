@@ -8,6 +8,7 @@ abstract public class SaranaPraSarana extends Sistem{
 	
 	@Override
 	String AnalisisListrik() {
+		
 		System.out.println("Jumlah StopKontak = " + getJumlahStopKontak());
 		if (getJumlahStopKontak() == 4)
 			System.out.println("Jumlah Sesuai");
