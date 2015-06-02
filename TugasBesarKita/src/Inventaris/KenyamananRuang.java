@@ -1,6 +1,6 @@
 package Inventaris;
 
-abstract public class KenyamananRuang extends Sistem{
+abstract public class KenyamananRuang extends Sistem implements Masukkan{
 
 	public KenyamananRuang(){
 		super();
@@ -10,9 +10,9 @@ abstract public class KenyamananRuang extends Sistem{
 	String AnalisisKebisingan() {
 		System.out.println("Analisis Kebisingan = " + AnalisisKebisingan());
 		String K = "Tidak Bising";
-		if ("Tidak Bising".equals(K))
+		if (getKebisingan().equals(K))
 			System.out.println("Kondisi Sesuai");
-		else if ("Bising".equals(K))
+		else if ("Bising".equals(getKebisingan()))
 			System.out.println("Kondisi Tidak Sesuai");
 		else
 			System.out.println("Input Salah");
@@ -23,9 +23,9 @@ abstract public class KenyamananRuang extends Sistem{
 	String AnalisisBau() {
 		System.out.println("Analisis Bau = " + AnalisisBau());
 		String B = "Tidak Bau";
-		if ("Tidak Bau".equals(B))
+		if (getKebauan().equals(B))
 			System.out.println("Kondisi Sesuai");
-		else if ("Bau".equals(B))
+		else if ("Bau".equals(getKebauan()))
 			System.out.println("Kondisi Tidak Sesuai");
 		else
 			System.out.println("Input Salah");
@@ -36,9 +36,9 @@ abstract public class KenyamananRuang extends Sistem{
 	String AnalisisKebocoran() {
 		System.out.println("Analisis Kebocoran = " + AnalisisKebocoran());
 		String C = "Tidak Ada";
-		if ("Tidak Ada".equals(C))
+		if (getKebocoran().equals(C))
 			System.out.println("Kondisi Sesuai");
-		else if ("Ada".equals(C))
+		else if ("Ada".equals(getKebocoran()))
 			System.out.println("Kondisi Tidak Sesuai");
 		else
 			System.out.println("Input Salah");
@@ -49,9 +49,9 @@ abstract public class KenyamananRuang extends Sistem{
 	String AnalisisKerusakan() {
 		System.out.println("Analisis Kerusakan = " + AnalisisKerusakan());
 		String R = "TidaK Ada";
-		if ("Tidak Ada".equals(R))
+		if (getKerusakan().equals(R))
 			System.out.println("Kondisi Sesuai");
-		else if ("Ada".equals(R))
+		else if ("Ada".equals(getKerusakan()))
 			System.out.println("Kondisi Tidak Sesuai");
 		else 
 			System.out.println("Input Salah");
@@ -62,9 +62,9 @@ abstract public class KenyamananRuang extends Sistem{
 	String AnalisisKeausan() {
 	System.out.println("Analisis Keausan =" + AnalisisKeausan());
 	String A = "Tidak Ada";
-	if ("Tidak Ada".equals(A))
+	if (getKeausan().equals(A))
 		System.out.println("Kondisi Sesuai");
-	else if("ada".equals(A))
+	else if("ada".equals(getKeausan()))
 		System.out.println("Kondisi Tidak sesuai");
 	else
 		System.out.println("Input Salah");

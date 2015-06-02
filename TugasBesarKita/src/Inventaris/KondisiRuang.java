@@ -1,6 +1,6 @@
 package Inventaris;
 
-abstract public class KondisiRuang extends Sistem{
+abstract public class KondisiRuang extends Sistem implements Masukkan{
 
 	public KondisiRuang(){
 		super();
@@ -18,7 +18,8 @@ abstract public class KondisiRuang extends Sistem{
 		System.out.println("Bentuk Ruangan = " + BentukRuang());
 		String PJ = "Persegi Panjang";
 		if ((getPanjangRuang()) != (HitungLuasRuang())){
-			System.out.println(PJ);}
+			System.out.println(PJ);
+			System.out.println("Sesuai");}
 		else if((getPanjangRuang())==(HitungLuasRuang())){
 			System.out.println("Tidak persegi panjang");
 			System.out.println("Tidak Sesuai");

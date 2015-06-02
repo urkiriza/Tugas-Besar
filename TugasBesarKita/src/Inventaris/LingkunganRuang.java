@@ -1,6 +1,6 @@
 package Inventaris;
 
-abstract public class LingkunganRuang extends Sistem{
+abstract public class LingkunganRuang extends Sistem implements Masukkan{
 
 	public LingkunganRuang(){
 		super();
@@ -10,9 +10,9 @@ abstract public class LingkunganRuang extends Sistem{
 	String AnalisisKondisiLantai() {
 		System.out.println("Analisis Kondisi Lantai = " + AnalisisKondisiLantai());
 		String KL = "Bersih";
-		if("Bersih".equals(KL))
+		if(getKondisiLantai().equals(KL))
 			System.out.println("Sesuai");
-		else if("Kotor".equals(KL))
+		else if("Kotor".equals(getKondisiLantai()))
 			System.out.println("Tidak Sesuai");
 		else 
 			System.out.println("Input Salah");
@@ -23,9 +23,9 @@ abstract public class LingkunganRuang extends Sistem{
 	String AnalisisKondisiDinding() {
 	System.out.println("Analisis Kondisi DInding = " + AnalisisKondisiDinding());
 	String KD = "Bersih";
-	if("Bersih".equals(KD))
+	if(getKondisiDinding().equals(KD))
 		System.out.println("Sesuai");
-	else if("Kotor".equals(KD))
+	else if("Kotor".equals(getKondisiDinding()))
 		System.out.println("Tidak Sesuai");
 	else 
 		System.out.println("Input Salah");
@@ -36,9 +36,9 @@ abstract public class LingkunganRuang extends Sistem{
 	String AnalisisKondisiAtap() {
 		System.out.println("Analisis Kondisi Atap = " + AnalisisKondisiAtap());
 		String KA = "Bersih";
-		if("Bersih".equals(KA))
+		if(getKondisiAtap().equals(KA))
 			System.out.println("Sesuai");
-		else if("Kotor".equals(KA))
+		else if("Kotor".equals(getKondisiAtap()))
 			System.out.println("Tidak Sesuai");
 		else 
 			System.out.println("Input Salah");
@@ -49,9 +49,9 @@ abstract public class LingkunganRuang extends Sistem{
 	String AnalisisKondisiPintu() {
 	System.out.println("Analisis Kondisi Pintu = " + AnalisisKondisiPintu());
 	String KP = "Bersih";
-	if("Bersih".equals(KP))
+	if(getKondisiPintu().equals(KP))
 		System.out.println("Sesuai");
-	else if("Kotor".equals(KP))
+	else if("Kotor".equals(getKondisiPintu()))
 		System.out.println("Tidak Sesuai");
 	else 
 		System.out.println("Input Salah");
@@ -62,9 +62,9 @@ abstract public class LingkunganRuang extends Sistem{
 	String AnalisisKondisiJendela() {
 		System.out.println("Analisis Kondisi Jendela = " + AnalisisKondisiJendela());
 		String KJ = "Bersih";
-		if("Bersih".equals(KJ))
+		if(getKondisiJendela().equals(KJ))
 			System.out.println("Sesuai");
-		else if("Kotor".equals(KJ))
+		else if("Kotor".equals(getKondisiJendela()))
 			System.out.println("Tidak Sesuai");
 		else 
 			System.out.println("Input Salah");
