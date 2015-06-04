@@ -1,6 +1,6 @@
 package Inventaris;
 
-abstract public class KeamananRuang extends Sistem implements Masukkan{
+abstract public class KeamananRuang extends Sistem {
 
 	public KeamananRuang(){
 		super();

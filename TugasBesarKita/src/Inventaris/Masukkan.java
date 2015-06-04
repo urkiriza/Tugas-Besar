@@ -148,7 +148,7 @@ public interface Masukkan {
 		DD.setTingkatBahaya(TBH);
 		
 				
-		
+		return null;
 		
 	}
 	
