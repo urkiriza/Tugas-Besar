@@ -1,9 +1,9 @@
 package Inventaris;
 import java.util.Scanner;
-public class Masukkan implements Inter {
+public abstract class Masukkan implements Inter {
 	Scanner in = new Scanner(System.in);
 	
-	public void Input(){
+	public void Face(){
 		Pengguna DD = new Pengguna();
 		System.out.print("Masukkan Nama Ruangan : ");
 		String Nama = in.nextLine();
@@ -148,7 +148,7 @@ public class Masukkan implements Inter {
 		DD.setTingkatBahaya(TBH);
 		
 				
-		return null;
+		return Face();
 		
 	}
 	
