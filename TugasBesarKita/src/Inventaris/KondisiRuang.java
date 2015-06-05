@@ -12,7 +12,7 @@ abstract public class KondisiRuang extends Sistem{
 		System.out.println("Lebar Ruangan : "+getLebarRuang());
 		System.out.println("Luas Ruangan = " + HitungLuasRuang());
 		HitungLuasRuang = getPanjangRuang() * getLebarRuang();
-		return 0;
+		return HitungLuasRuang();
 	}
 
 	@Override
@@ -30,7 +30,7 @@ abstract public class KondisiRuang extends Sistem{
 			System.out.println("Bentuk Ruangan Absurd");
 			}
 		
-		return 0;
+		return BentukRuang();
 	}
 
 	@Override
@@ -44,7 +44,7 @@ abstract public class KondisiRuang extends Sistem{
 		else if(HitungRasioLuas <= 0.5){
 			System.out.println("Input Salah");
 		}
-		return 0;
+		return HitungRasioRuangan();
 	}
 
 	@Override
@@ -58,6 +58,6 @@ abstract public class KondisiRuang extends Sistem{
 		else if ((getJumlahPintu() <= 1) && ((getJumlahJendela() <= 1))){
 			System.out.println("Tidak Sesuai");
 		}
-		return null;
+		return AnalisisPdanJ();
 	}	
 }
