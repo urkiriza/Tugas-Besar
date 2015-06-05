@@ -32,7 +32,7 @@ abstract public class SaranaPraSarana extends Sistem{
 		System.out.println("Kondisi Tidak Sesuai");
 		else 
 			System.out.println("Input Salah");
-		return null;
+		return AnalisisListrik();
 	}
 
 	@Override
@@ -61,7 +61,7 @@ abstract public class SaranaPraSarana extends Sistem{
 		else 
 			System.out.println("Input Salah");
 		
-		return null;
+		return AnalisisProyektor();
 	}
 
 	@Override
@@ -90,7 +90,7 @@ abstract public class SaranaPraSarana extends Sistem{
 		else 
 			System.out.println("Input Salah");
 		
-		return null;
+		return AnalisisLampu();
 	}
 
 	@Override
@@ -119,7 +119,7 @@ abstract public class SaranaPraSarana extends Sistem{
 		else 
 			System.out.println("Input Salah");
 		
-		return null;
+		return AnalisisKipasAngin();
 	}
 
 	@Override
@@ -148,7 +148,7 @@ abstract public class SaranaPraSarana extends Sistem{
 		else 
 			System.out.println("Input Salah");
 		
-		return null;
+		return AnalisisAC();
 	}
 
 	@Override
@@ -159,7 +159,7 @@ abstract public class SaranaPraSarana extends Sistem{
 			System.out.println("Kondisi TidaK Sesuai");
 		else 
 			System.out.println("Input Salah");
-		return null;
+		return AnalisisInternet();
 	}
 
 	@Override
@@ -188,6 +188,6 @@ abstract public class SaranaPraSarana extends Sistem{
 		else 
 			System.out.println("Input Salah");
 		
-		return null;
+		return AnalisisCCTV();
 	}	
 }
