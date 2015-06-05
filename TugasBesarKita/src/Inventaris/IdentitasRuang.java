@@ -13,6 +13,6 @@ public abstract class IdentitasRuang extends Sistem {
 		System.out.println("Program Studi : "+getProgramStudi());
 		System.out.println("Fakultas :"+getFakultas());
 		
-		return null;
+		return Ruangan();
 	}
 }
