@@ -35,11 +35,11 @@ abstract public class Sistem extends Pengguna {
 	
 	double HitungLuasRuang(int HitungLuasRuang) {
 		// TODO Auto-generated method stub
-		return 0;
+		return HitungLuasRuang();
 	}
 	
 	double HitungRasioRuangan(double HitungRasioLuas) {
 		// TODO Auto-generated method stub
-		return 0;
+		return HitungRasioRuangan();
 	}
 }
