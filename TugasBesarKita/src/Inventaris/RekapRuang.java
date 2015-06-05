@@ -39,187 +39,186 @@ public class RekapRuang extends Sistem{
 		AnalisisKunciJendela();
 		AnalisisKeamananRuang();
 				
-		return null;
+		return Review();
 	}
 
 	@Override
 	String Ruangan() {
 		// TODO Auto-generated method stub
-		return null;
+		return Ruangan();
 	}
 
 	@Override
 	double HitungLuasRuang() {
 		// TODO Auto-generated method stub
-		return 0;
+		return HitungLuasRuang();
 	}
 
 	@Override
 	double BentukRuang() {
 		// TODO Auto-generated method stub
-		return 0;
+		return BentukRuang();
 	}
 
 	@Override
 	double HitungRasioRuangan() {
 		// TODO Auto-generated method stub
-		return 0;
+		return HitungRasioRuangan();
 	}
 
 	@Override
 	String AnalisisPdanJ() {
 		// TODO Auto-generated method stub
-		return null;
+		return AnalisisPdanJ();
 	}
 
 	@Override
 	String AnalisisListrik() {
 		// TODO Auto-generated method stub
-		return null;
+		return AnalisisListrik();
 	}
 
 	@Override
 	String AnalisisProyektor() {
 		// TODO Auto-generated method stub
-		return null;
+		return AnalisisProyektor();
 	}
 
 	@Override
 	String AnalisisLampu() {
 		// TODO Auto-generated method stub
-		return null;
+		return AnalisisLampu();
 	}
 
 	@Override
 	String AnalisisKipasAngin() {
 		// TODO Auto-generated method stub
-		return null;
+		return AnalisisKipasAngin();
 	}
 
 	@Override
 	String AnalisisAC() {
 		// TODO Auto-generated method stub
-		return null;
+		return AnalisisAC();
 	}
 
 	@Override
 	String AnalisisInternet() {
 		// TODO Auto-generated method stub
-		return null;
+		return AnalisisInternet();
 	}
 
 	@Override
 	String AnalisisCCTV() {
 		// TODO Auto-generated method stub
-		return null;
+		return AnalisisCCTV();
 	}
 
 	@Override
 	String AnalisisKondisiLantai() {
 		// TODO Auto-generated method stub
-		return null;
+		return AnalisisKondisiLantai();
 	}
 
 	@Override
 	String AnalisisKondisiDinding() {
 		// TODO Auto-generated method stub
-		return null;
+		return AnalisisKondisiDinding();
 	}
 
 	@Override
 	String AnalisisKondisiAtap() {
 		// TODO Auto-generated method stub
-		return null;
+		return AnalisisKondisiAtap();
 	}
 
 	@Override
 	String AnalisisKondisiPintu() {
 		// TODO Auto-generated method stub
-		return null;
+		return AnalisisKondisiPintu();
 	}
 
 	@Override
 	String AnalisisKondisiJendela() {
 		// TODO Auto-generated method stub
-		return null;
+		return AnalisisKondisiJendela();
 	}
 
 	@Override
 	String AnalisisSirUdara() {
 		// TODO Auto-generated method stub
-		return null;
+		return AnalisisSirUdara();
 	}
 
 	@Override
 	String AnalisisPencahayaan() {
 		// TODO Auto-generated method stub
-		return null;
+		return AnalisisPencahayaan();
 	}
 
 	@Override
 	String AnalisisKelmabapan() {
 		// TODO Auto-generated method stub
-		return null;
+		return AnalisisKelmabapan();
 	}
 
 	@Override
 	String AnalisisSuhu() {
 		// TODO Auto-generated method stub
-		return null;
+		return AnalisisSuhu();
 	}
 
 	@Override
 	String AnalisisKebisingan() {
 		// TODO Auto-generated method stub
-		return null;
+		return AnalisisKebisingan();
 	}
 
 	@Override
 	String AnalisisBau() {
 		// TODO Auto-generated method stub
-		return null;
+		return AnalisisBau();
 	}
 
 	@Override
 	String AnalisisKebocoran() {
 		// TODO Auto-generated method stub
-		return null;
+		return AnalisisKebocoran();
 	}
 
 	@Override
 	String AnalisisKerusakan() {
 		// TODO Auto-generated method stub
-		return null;
+		return AnalisisKerusakan();
 	}
 
 	@Override
 	String AnalisisKeausan() {
 		// TODO Auto-generated method stub
-		return null;
+		return AnalisisKeausan();
 	}
 
 	@Override
 	String AnalisisKekokohan() {
 		// TODO Auto-generated method stub
-		return null;
+		return AnalisisKekokohan();
 	}
 
 	@Override
 	String AnalisisKunciPintu() {
 		// TODO Auto-generated method stub
-		return null;
+		return AnalisisKunciPintu();
 	}
 
 	@Override
 	String AnalisisKunciJendela() {
 		// TODO Auto-generated method stub
-		return null;
+		return AnalisisKunciJendela();
 	}
 
 	@Override
 	String AnalisisKeamananRuang() {
 		// TODO Auto-generated method stub
-		return null;
+		return AnalisisKeamananRuang();
 	}
-	
 }
