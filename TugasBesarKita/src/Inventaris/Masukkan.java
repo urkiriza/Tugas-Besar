@@ -1,9 +1,9 @@
 package Inventaris;
 import java.util.Scanner;
-public interface Masukkan {
+public class Masukkan implements Inter {
 	Scanner in = new Scanner(System.in);
 	
-	public static void inputanUser(){
+	public void Input(){
 		Pengguna DD = new Pengguna();
 		System.out.print("Masukkan Nama Ruangan : ");
 		String Nama = in.nextLine();
