@@ -16,7 +16,7 @@ abstract public class KebersihanRuang extends Sistem{
 			System.out.println("Tidak Sesuai");
 		else
 			System.out.println("Input Salah");
-		return null;
+		return AnalisisSirUdara();
 	}
 
 	@Override
@@ -29,7 +29,7 @@ abstract public class KebersihanRuang extends Sistem{
 			System.out.println("Cahaya Tidak Sesuai");
 		else
 			System.out.println("Input Salah");
-		return null;
+		return AnalisisPencahayaan();
 	}
 
 	@Override
@@ -42,7 +42,7 @@ abstract public class KebersihanRuang extends Sistem{
 			System.out.println("Lembab Tidak Sesuai");
 		else
 			System.out.println("Input Salah");
-		return null;
+		return AnalisisKelmabapan();
 	}
 
 	@Override
@@ -55,6 +55,6 @@ abstract public class KebersihanRuang extends Sistem{
 			System.out.println("Suhu Tidak Sesuai");
 		else
 			System.out.println("Input Salah");
-		return null;
+		return AnalisisSuhu();
 	}
 }
