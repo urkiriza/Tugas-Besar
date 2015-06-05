@@ -1,5 +1,6 @@
 package Inventaris;
 
-public interface Inter {
-	abstract void Input();
+abstract public interface Inter {
+	
+	abstract void Face();
 }
