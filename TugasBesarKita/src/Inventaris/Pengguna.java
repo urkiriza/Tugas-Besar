@@ -334,11 +334,11 @@ public class Pengguna {
 	
 	String AnalisisKunciPintu() {
 		// TODO Auto-generated method stub
-		return null;
+		return AnalisisKunciPintu();
 	}
 	
 	String AnalisisKunciJendela() {
 		// TODO Auto-generated method stub
-		return null;
+		return AnalisisKunciJendela();
 	}
 }
