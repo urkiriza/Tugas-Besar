@@ -16,7 +16,7 @@ abstract public class KeamananRuang extends Sistem {
 			System.out.println("Kondisi Tidak sesuai");
 		else
 			System.out.println("Input Salah");
-		return null;
+		return AnalisisKekokohan();
 	}
 
 	@Override
@@ -29,7 +29,7 @@ abstract public class KeamananRuang extends Sistem {
 			System.out.println("Kondisi Tidak sesuai");
 		else
 			System.out.println("Input Salah");
-		return null;
+		return AnalisisKunciPintu();
 	}
 
 	@Override
@@ -42,7 +42,7 @@ abstract public class KeamananRuang extends Sistem {
 			System.out.println("Kondisi Tidak sesuai");
 		else
 			System.out.println("Input Salah");
-		return null;
+		return AnalisisKunciJendela();
 	}
 
 	@Override
@@ -55,6 +55,6 @@ abstract public class KeamananRuang extends Sistem {
 			System.out.println("Kondisi Tidak sesuai");
 		else
 			System.out.println("Input Salah");
-		return null;
+		return AnalisisKeamananRuang();
 	}
 }
