@@ -16,7 +16,7 @@ abstract public class LingkunganRuang extends Sistem{
 			System.out.println("Tidak Sesuai");
 		else 
 			System.out.println("Input Salah");
-		return null;
+		return AnalisisKondisiLantai();
 	}
 
 	@Override
@@ -29,7 +29,7 @@ abstract public class LingkunganRuang extends Sistem{
 		System.out.println("Tidak Sesuai");
 	else 
 		System.out.println("Input Salah");
-		return null;
+		return AnalisisKondisiDinding();
 	}
 
 	@Override
@@ -42,7 +42,7 @@ abstract public class LingkunganRuang extends Sistem{
 			System.out.println("Tidak Sesuai");
 		else 
 			System.out.println("Input Salah");
-		return null;
+		return AnalisisKondisiAtap();
 	}
 
 	@Override
@@ -55,7 +55,7 @@ abstract public class LingkunganRuang extends Sistem{
 		System.out.println("Tidak Sesuai");
 	else 
 		System.out.println("Input Salah");
-		return null;
+		return AnalisisKondisiPintu();
 	}
 
 	@Override
@@ -68,6 +68,6 @@ abstract public class LingkunganRuang extends Sistem{
 			System.out.println("Tidak Sesuai");
 		else 
 			System.out.println("Input Salah");
-		return null;
+		return AnalisisKondisiJendela();
 	}	
 }
