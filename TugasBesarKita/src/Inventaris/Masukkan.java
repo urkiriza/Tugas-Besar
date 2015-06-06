@@ -1,6 +1,6 @@
 package Inventaris;
 import java.util.Scanner;
-public abstract class Masukkan implements Inter {
+public class Masukkan implements Inter {
 	Scanner in = new Scanner(System.in);
 	
 	public void Face(){
@@ -147,9 +147,9 @@ public abstract class Masukkan implements Inter {
 		String TBH = in.nextLine();
 		DD.setTingkatBahaya(TBH);
 		
-				
-		return Face();
-		
+	}
+	public int kembali(){
+		return 0;
 	}
 	
 }
