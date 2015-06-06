@@ -26,9 +26,9 @@ abstract public class SaranaPraSarana extends Sistem{
 			System.out.println("Input Salah");
 		
 		System.out.println("Posisi StopKontak = " + getPosisiStopKontak());
-		if ((getPosisiStopKontak() == "Dipojok Ruang") && (getPosisiStopKontak() == "Dekat Dosen"))
+		if ((getPosisiStopKontak() == "Dipojok Ruang") || (getPosisiStopKontak() == "Dekat Dosen"))
 			System.out.println("Kondisi Sesuai");
-		else if ((getPosisiStopKontak() != "Dipojok Ruang") && (getPosisiStopKontak() != "Dekat Dosen"))
+		else if ((getPosisiStopKontak() != "Dipojok Ruang") || (getPosisiStopKontak() != "Dekat Dosen"))
 		System.out.println("Kondisi Tidak Sesuai");
 		else 
 			System.out.println("Input Salah");

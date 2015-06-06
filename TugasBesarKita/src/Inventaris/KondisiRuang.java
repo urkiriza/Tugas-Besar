@@ -52,10 +52,10 @@ abstract public class KondisiRuang extends Sistem{
 		System.out.println("Jumlah Pintu : "+getJumlahPintu());
 		System.out.println("Jumlah Jendela : "+getJumlahJendela());
 		System.out.println("Analisis Pintu dan Jendela = " + AnalisisPdanJ());
-		if ((getJumlahPintu() >= 2) && ((getJumlahJendela() >= 1))){
+		if ((getJumlahPintu() >= 2) || ((getJumlahJendela() >= 1))){
 			System.out.println("Sesuai");
 		}
-		else if ((getJumlahPintu() <= 1) && ((getJumlahJendela() <= 1))){
+		else if ((getJumlahPintu() <= 1) || ((getJumlahJendela() <= 1))){
 			System.out.println("Tidak Sesuai");
 		}
 		return AnalisisPdanJ();
