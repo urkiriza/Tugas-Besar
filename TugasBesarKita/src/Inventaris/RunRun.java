@@ -6,6 +6,7 @@ public class RunRun {
 		// TODO Auto-generated method stub
 	Masukkan MM = new Masukkan();
 	MM.Face();
+	MM.kembali();
 	}
 //return null
 	//interface salah isinya hanya abstract method saja.
